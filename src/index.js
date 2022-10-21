@@ -7,14 +7,26 @@ searchBar.addEventListener('submit', e=>{
 
 function search(searchingFor = 'operator'){
     fetch(`http:localhost:3000/operators`).then(res => res.json())
-    .then(operators => operators.forEach(operator => renderOperators(operator)))
+    .then(operators => renderOperatorList(operators))
 }
 
-function renderOperators(operator){
+function renderOperatorList(operators){
     const list = document.getElementById('operatorList')
-    const li = document.createElement('li')
+    const table = document.createElement('table')
 
-    li.textContent = operator.name
+    for(let i = 0; i < operators.length; i += 3){ //i increments 3 per iteration, since three operators go in a table row.
+        const tr = document.createElement('tr')
 
-    list.appendChild(li)
+        for (let j = i; j < i + 3; j++){
+            const td = document.createElement('td')
+            const li = document.createElement('li')
+
+            li.textContent = operators[j].name
+
+            td.appendChild(li)
+            tr.appendChild(td)
+        }
+        table.appendChild(tr)
+    }
+    list.appendChild(table)
 }
