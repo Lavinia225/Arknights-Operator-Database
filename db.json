@@ -591,7 +591,8 @@
       "birthplace": "Victoria",
       "class": "Vanguard",
       "archetype": "Standard Bearer",
-      "id": 66
+      "id": 66,
+      "atk": 516
     },
     {
       "name": "Bagpipe",
@@ -599,7 +600,8 @@
       "birthplace": "Victoria",
       "class": "Vanguard",
       "archetype": "Charger",
-      "id": 67
+      "id": 67,
+      "atk": 554
     },
     {
       "name": "Reed",
@@ -607,7 +609,8 @@
       "birthplace": "Victoria",
       "class": "Vanguard",
       "archetype": "Charger",
-      "id": 68
+      "id": 68,
+      "atk": 539
     },
     {
       "name": "Kazemaru",
@@ -615,7 +618,8 @@
       "birthplace": "Higashi",
       "class": "Specialist",
       "archetype": "Dollkeeper",
-      "id": 69
+      "id": 69,
+      "atk": 660
     },
     {
       "name": "Mizuki",
@@ -623,7 +627,8 @@
       "birthplace": "Higashi",
       "class": "Specialist",
       "archetype": "Ambusher",
-      "id": 70
+      "id": 70,
+      "atk": 807
     },
     {
       "name": "Bena",
@@ -631,7 +636,8 @@
       "birthplace": "Victoria",
       "class": "Specialist",
       "archetype": "Dollkeeper",
-      "id": 71
+      "id": 71,
+      "atk": 651
     },
     {
       "name": "Gladiia",
@@ -639,7 +645,8 @@
       "birthplace": "Ægir",
       "class": "Specialist",
       "archetype": "Hookmaster",
-      "id": 72
+      "id": 72,
+      "atk": 747
     },
     {
       "name": "Frost",
@@ -647,7 +654,8 @@
       "birthplace": "Unknown",
       "class": "Specialist",
       "archetype": "Trapmaster",
-      "id": 73
+      "id": 73,
+      "atk": 505
     },
     {
       "name": "Weedy",
@@ -655,7 +663,8 @@
       "birthplace": "Iberia",
       "class": "Specialist",
       "archetype": "Push Stroker",
-      "id": 74
+      "id": 74,
+      "atk": 634
     },
     {
       "name": "Phantom",
@@ -663,7 +672,8 @@
       "birthplace": "Victoria",
       "class": "Specialist",
       "archetype": "Executor",
-      "id": 75
+      "id": 75,
+      "atk": 517
     },
     {
       "name": "Aak",
@@ -671,7 +681,8 @@
       "birthplace": "Lungmen",
       "class": "Specialist",
       "archetype": "Sacrificial Specialist",
-      "id": 76
+      "id": 76,
+      "atk": 663
     },
     {
       "name": "Snowsant",
@@ -679,7 +690,8 @@
       "birthplace": "Lungmen",
       "class": "Specialist",
       "archetype": "Hookmaster",
-      "id": 77
+      "id": 77,
+      "atk": 707
     },
     {
       "name": "Projekt Red",
@@ -687,7 +699,8 @@
       "birthplace": "Undisclosed",
       "class": "Specialist",
       "archetype": "Executor",
-      "id": 78
+      "id": 78,
+      "atk": 500
     },
     {
       "name": "Rockrock",
@@ -695,7 +708,8 @@
       "birthplace": "Victoria",
       "class": "Caster",
       "archetype": "Drone/Mech Accord",
-      "id": 79
+      "id": 79,
+      "atk": 307
     },
     {
       "name": "Goldenglow",
@@ -703,7 +717,8 @@
       "birthplace": "Victoria",
       "class": "Caster",
       "archetype": "Drone/Mech Accord",
-      "id": 80
+      "id": 80,
+      "atk": 313
     },
     {
       "name": "Kjera",
@@ -711,7 +726,8 @@
       "birthplace": "Kjerag",
       "class": "Caster",
       "archetype": "Drone/Mech Accord",
-      "id": 81
+      "id": 81,
+      "atk": 282
     },
     {
       "name": "Pudding",
@@ -719,7 +735,8 @@
       "birthplace": "Columbia",
       "class": "Caster",
       "archetype": "Chain Caster",
-      "id": 82
+      "id": 82,
+      "atk": 529
     },
     {
       "name": "Corroserum",
@@ -727,7 +744,8 @@
       "birthplace": "Columbia",
       "class": "Caster",
       "archetype": "Blast Caster",
-      "id": 83
+      "id": 83,
+      "atk": 729
     },
     {
       "name": "Carnelian",
@@ -735,7 +753,8 @@
       "birthplace": "Sargon",
       "class": "Caster",
       "archetype": "Modal/Phalanx Caster",
-      "id": 84
+      "id": 84,
+      "atk": 806
     },
     {
       "name": "Indigo",
@@ -743,7 +762,8 @@
       "birthplace": "Iberia",
       "class": "Caster",
       "archetype": "Charge/Mystic Caster",
-      "id": 85
+      "id": 85,
+      "atk": 1085
     },
     {
       "name": "Passenger",
@@ -751,7 +771,8 @@
       "birthplace": "Columbia",
       "class": "Caster",
       "archetype": "Chain Caster",
-      "id": 86
+      "id": 86,
+      "atk": 649
     },
     {
       "name": "Dusk",
@@ -759,7 +780,8 @@
       "birthplace": "Yan",
       "class": "Caster",
       "archetype": "AoE/Splash Caster",
-      "id": 87
+      "id": 87,
+      "atk": 868
     },
     {
       "name": "Lava the Purgatory",
@@ -767,7 +789,8 @@
       "birthplace": "Victoria",
       "class": "Caster",
       "archetype": "AoE/Splash Caster",
-      "id": 88
+      "id": 88,
+      "atk": 766
     },
     {
       "name": "Iris",
@@ -775,7 +798,8 @@
       "birthplace": "Victoria",
       "class": "Caster",
       "archetype": "Charge/Mystic Caster",
-      "id": 89
+      "id": 89,
+      "atk": 1198
     },
     {
       "name": "Mint",
@@ -783,7 +807,8 @@
       "birthplace": "Victoria",
       "class": "Caster",
       "archetype": "Modal/Phalanx Caster",
-      "id": 90
+      "id": 90,
+      "atk": 706
     },
     {
       "name": "Pith",
@@ -791,7 +816,8 @@
       "birthplace": "Unknown",
       "class": "Caster",
       "archetype": "AoE/Splash Caster",
-      "id": 91
+      "id": 91,
+      "atk": 792
     },
     {
       "name": "Tomimi",
@@ -799,7 +825,8 @@
       "birthplace": "Sargon",
       "class": "Caster",
       "archetype": "ST/Core Caster",
-      "id": 92
+      "id": 92,
+      "atk": 576
     },
     {
       "name": "Beeswax",
@@ -807,7 +834,8 @@
       "birthplace": "Sargon",
       "class": "Caster",
       "archetype": "Modal/Phalanx Caster",
-      "id": 93
+      "id": 93,
+      "atk": 709
     },
     {
       "name": "Click",
@@ -815,7 +843,8 @@
       "birthplace": "Undisclosed",
       "class": "Caster",
       "archetype": "Drone/Mech Accord",
-      "id": 94
+      "id": 94,
+      "atk": 308
     },
     {
       "name": "Leonhardt",
@@ -823,7 +852,8 @@
       "birthplace": "Rim Billiton",
       "class": "Caster",
       "archetype": "AoE/Splash Caster",
-      "id": 95
+      "id": 95,
+      "atk": 742
     },
     {
       "name": "Absinthe",
@@ -831,7 +861,8 @@
       "birthplace": "Ursus",
       "class": "Caster",
       "archetype": "ST/Core Caster",
-      "id": 96
+      "id": 96,
+      "atk": 607
     },
     {
       "name": "Ceobe",
@@ -839,7 +870,8 @@
       "birthplace": "Bolívar",
       "class": "Caster",
       "archetype": "ST/Core Caster",
-      "id": 97
+      "id": 97,
+      "atk": 629
     },
     {
       "name": "Leizi",
@@ -847,7 +879,8 @@
       "birthplace": "Yan",
       "class": "Caster",
       "archetype": "Chain Caster",
-      "id": 98
+      "id": 98,
+      "atk": 608
     },
     {
       "name": "Mostima",
@@ -855,7 +888,8 @@
       "birthplace": "Laterano",
       "class": "Caster",
       "archetype": "AoE/Splash Caster",
-      "id": 99
+      "id": 99,
+      "atk": 789
     },
     {
       "name": "Greyy",
@@ -863,7 +897,8 @@
       "birthplace": "Bolívar",
       "class": "Caster",
       "archetype": "AoE/Splash Caster",
-      "id": 100
+      "id": 100,
+      "atk": 683
     },
     {
       "name": "Nightmare",
@@ -871,7 +906,8 @@
       "birthplace": "Victoria",
       "class": "Caster",
       "archetype": "ST/Core Caster",
-      "id": 101
+      "id": 101,
+      "atk": 597
     },
     {
       "name": "Eyjafjalla",
@@ -879,7 +915,8 @@
       "birthplace": "Leithanien",
       "class": "Caster",
       "archetype": "ST/Core Caster",
-      "id": 102
+      "id": 102,
+      "atk": 608
     },
     {
       "name": "Ifrit",
@@ -887,7 +924,8 @@
       "birthplace": "Unknown",
       "class": "Caster",
       "archetype": "Blast Caster",
-      "id": 103
+      "id": 103,
+      "atk": 820
     },
     {
       "name": "Skyfire",
@@ -895,7 +933,8 @@
       "birthplace": "Victoria",
       "class": "Caster",
       "archetype": "AoE/Splash Caster",
-      "id": 104
+      "id": 104,
+      "atk": 752
     },
     {
       "name": "Amiya",
@@ -903,7 +942,8 @@
       "birthplace": "Rim Billiton",
       "class": "Caster",
       "archetype": "ST/Core Caster",
-      "id": 105
+      "id": 105,
+      "atk": 587
     },
     {
       "name": "Gitano",
@@ -911,7 +951,8 @@
       "birthplace": "Sami",
       "class": "Caster",
       "archetype": "AoE/Splash Caster",
-      "id": 106
+      "id": 106,
+      "atk": 698
     },
     {
       "name": "Haze",
@@ -919,7 +960,8 @@
       "birthplace": "Victoria",
       "class": "Caster",
       "archetype": "ST/Core Caster",
-      "id": 107
+      "id": 107,
+      "atk": 569
     },
     {
       "name": "Steward",
@@ -927,7 +969,8 @@
       "birthplace": "Kjerag",
       "class": "Caster",
       "archetype": "ST/Core Caster",
-      "id": 108
+      "id": 108,
+      "atk": 470
     },
     {
       "name": "Lava",
@@ -935,7 +978,8 @@
       "birthplace": "Victoria",
       "class": "Caster",
       "archetype": "AoE/Splash Caster",
-      "id": 109
+      "id": 109,
+      "atk": 582
     },
     {
       "name": "12F",
@@ -943,7 +987,8 @@
       "birthplace": "Unknown",
       "class": "Caster",
       "archetype": "AoE/Splash Caster",
-      "id": 110
+      "id": 110,
+      "atk": 432
     },
     {
       "name": "Durin",
@@ -951,7 +996,8 @@
       "birthplace": "Undisclosed",
       "class": "Caster",
       "archetype": "ST/Core Caster",
-      "id": 111
+      "id": 111,
+      "atk": 340
     }
   ]
 }
