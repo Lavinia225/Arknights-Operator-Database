@@ -14,8 +14,8 @@ factionRedirectAdder()
 function search(searchingFor = 'all'){ //Current final then is for faction
     fetch(`http:localhost:3000/operators`).then(res => res.json())
     .then(operators =>{
-        const faction = operators.filter(operator => operator.faction === searchingFor)
-        renderOperatorList(faction)
+        const operatorResults = operators.filter(operator =>operator[searchingFor] === String(this)) //Probably refactor this into secondArg
+        renderOperatorList(operatorResults)
     })
 }
 
@@ -25,15 +25,20 @@ function renderOperatorList(operators){
     for(let i = 0; i < operators.length; i += 3){ //i increments 3 per iteration, since three operators go in a table row.
         const tr = document.createElement('tr')
 
+        try{
         for (let j = i; j < i + 3; j++){
             const td = document.createElement('td')
             const li = document.createElement('li')
-
             li.textContent = operators[j].name
 
             td.appendChild(li)
             tr.appendChild(td)
         }
+    }
+    catch (era){
+        console.warn(`Warning: Operator count was not divisible evenly by three. ${era}`)
+    }
+
         table.appendChild(tr)
     }
     clearForm()
@@ -57,7 +62,7 @@ function factionRedirectAdder(){
             const factionNameStartPoint = faction.src.indexOf('images/') + 7
             const factionName = faction.src.slice(factionNameStartPoint, faction.src.length - 5).replaceAll("%20", " ")
             
-            search(factionName)
+            search.call(factionName, 'faction')
         })
     })
 }
