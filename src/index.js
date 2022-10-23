@@ -1,9 +1,13 @@
 const searchBar = document.querySelector('form')
+const prts = document.getElementById('PRTS')
+const factionTable = document.getElementById('factionTable') //This is kept here so when not displayed, it can be brought back.
 
 searchBar.addEventListener('submit', e=>{
     e.preventDefault()
     search()
 })
+
+prts.addEventListener('click', ()=> reset())
 
 function search(searchingFor = 'operator'){
     fetch(`http:localhost:3000/operators`).then(res => res.json())
@@ -11,7 +15,6 @@ function search(searchingFor = 'operator'){
 }
 
 function renderOperatorList(operators){
-    const list = document.getElementById('operatorList')
     const table = document.createElement('table')
 
     for(let i = 0; i < operators.length; i += 3){ //i increments 3 per iteration, since three operators go in a table row.
@@ -28,5 +31,15 @@ function renderOperatorList(operators){
         }
         table.appendChild(tr)
     }
-    list.appendChild(table)
+    clearForm()
+    document.getElementById('mainSection').appendChild(table)
+}
+
+function clearForm(){
+    document.getElementById('factionTable').remove()
+}
+
+function reset(){
+    Array.from(document.getElementById('mainSection').children).forEach(child => child.remove())
+    document.querySelector('body').appendChild(factionTable)
 }
