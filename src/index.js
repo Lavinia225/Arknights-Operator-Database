@@ -9,9 +9,14 @@ searchBar.addEventListener('submit', e=>{
 
 prts.addEventListener('click', ()=> reset())
 
-function search(searchingFor = 'operator'){
+factionRedirectAdder()
+
+function search(searchingFor = 'all'){ //Current final then is for faction
     fetch(`http:localhost:3000/operators`).then(res => res.json())
-    .then(operators => renderOperatorList(operators))
+    .then(operators =>{
+        const faction = operators.filter(operator => operator.faction === searchingFor)
+        renderOperatorList(faction)
+    })
 }
 
 function renderOperatorList(operators){
@@ -42,4 +47,17 @@ function clearForm(){
 function reset(){
     Array.from(document.getElementById('mainSection').children).forEach(child => child.remove())
     document.querySelector('body').appendChild(factionTable)
+}
+
+function factionRedirectAdder(){
+    const factions = Array.from(document.querySelectorAll('#factionTable img'))
+
+    factions.forEach(faction =>{
+        faction.addEventListener('click', ()=>{
+            const factionNameStartPoint = faction.src.indexOf('images/') + 7
+            const factionName = faction.src.slice(factionNameStartPoint, faction.src.length - 5).replaceAll("%20", " ")
+            
+            search(factionName)
+        })
+    })
 }
