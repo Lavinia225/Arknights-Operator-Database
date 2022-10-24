@@ -11,10 +11,10 @@ prts.addEventListener('click', ()=> reset())
 
 factionRedirectAdder()
 
-function search(searchingFor = 'all'){ //Current final then is for faction
+function search(searchingFor = 'all', searchType = 'all'){ //Current final then is for faction
     fetch(`http:localhost:3000/operators`).then(res => res.json())
     .then(operators =>{
-        const operatorResults = operators.filter(operator =>operator[searchingFor] === String(this)) //Probably refactor this into secondArg
+        const operatorResults = operators.filter(operator =>operator[searchType] === searchingFor) //Probably refactor this into secondArg
         renderOperatorList(operatorResults)
     })
 }
@@ -62,7 +62,7 @@ function factionRedirectAdder(){
             const factionNameStartPoint = faction.src.indexOf('images/') + 7
             const factionName = faction.src.slice(factionNameStartPoint, faction.src.length - 5).replaceAll("%20", " ")
             
-            search.call(factionName, 'faction')
+            search(factionName, 'faction')
         })
     })
 }
