@@ -16,15 +16,18 @@ prts.addEventListener('click', ()=>{
     mainSection.appendChild(factionTable)
 })
 
-dropTable.addEventListener('change', e=>searching = e.target.value)
+dropTable.addEventListener('change', e=>{
+    searching = e.target.value
+    searchBar.search.placeholder = `Searching by ${searching}`
+})
 factionRedirectAdder()
 
-function search(searchType = 'all', searchingFor = 'all'){ //Current final then is for faction
-    clearForm()
+function search(searchType = 'all', searchingFor = 'all'){
+    clearMain()
 
     fetch(`http:localhost:3000/operators`).then(res => res.json())
     .then(operators =>{
-        const operatorResults = operators.filter(operator =>operator[searchType] === searchingFor) //Probably refactor this into secondArg
+        const operatorResults = operators.filter(operator =>operator[searchType] === searchingFor)
         if(searchType === 'name'){
             renderProfile(operatorResults[0])
         }
@@ -32,6 +35,7 @@ function search(searchType = 'all', searchingFor = 'all'){ //Current final then 
             renderOperatorList(operatorResults) 
         }
     })
+    searchBar.reset()
 }
 
 function renderOperatorList(operators){
@@ -63,7 +67,7 @@ function renderOperatorList(operators){
     mainSection.appendChild(table)
 }
 
-function clearForm(){
+function clearMain(){
     Array.from(mainSection.children).forEach(child => child.remove())
 }
 
@@ -81,7 +85,7 @@ function factionRedirectAdder(){
 }
 
 function renderProfile(operator){
-    clearForm()
+    clearMain()
 
     const operatorCopy = Object.assign({}, operator)
     const nameHolder = document.createElement('h2')
