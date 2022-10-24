@@ -16,3 +16,13 @@ body {
     height: 125px;
     width: 125px;
 }
+
+#submit{
+    position: relative;
+    left: 100px;
+}
+
+form {
+    margin:auto;
+    max-width: 40%
+}
