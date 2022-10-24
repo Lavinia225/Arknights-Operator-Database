@@ -4,14 +4,14 @@ const factionTable = document.getElementById('factionTable') //This is kept here
 
 searchBar.addEventListener('submit', e=>{
     e.preventDefault()
-    search()
+    search('name', e.target.search.value)
 })
 
 prts.addEventListener('click', ()=> reset())
 
 factionRedirectAdder()
 
-function search(searchingFor = 'all', searchType = 'all'){ //Current final then is for faction
+function search(searchType = 'all', searchingFor = 'all'){ //Current final then is for faction
     fetch(`http:localhost:3000/operators`).then(res => res.json())
     .then(operators =>{
         const operatorResults = operators.filter(operator =>operator[searchType] === searchingFor) //Probably refactor this into secondArg
