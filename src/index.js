@@ -62,7 +62,7 @@ function factionRedirectAdder(){
             const factionNameStartPoint = faction.src.indexOf('images/') + 7
             const factionName = faction.src.slice(factionNameStartPoint, faction.src.length - 5).replaceAll("%20", " ")
             
-            search(factionName, 'faction')
+            search('faction', factionName)
         })
     })
 }
