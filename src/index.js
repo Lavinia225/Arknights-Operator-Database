@@ -1,14 +1,17 @@
 const searchBar = document.querySelector('form')
 const prts = document.getElementById('PRTS')
 const factionTable = document.getElementById('factionTable') //This is kept here so when not displayed, it can be brought back.
+const dropTable = document.querySelector('select')
+
+let searching = 'name'
 
 searchBar.addEventListener('submit', e=>{
     e.preventDefault()
-    search('name', e.target.search.value)
+    search(searching, e.target.search.value)
 })
 
 prts.addEventListener('click', ()=> reset())
-
+dropTable.addEventListener('change', e=>searching = e.target.value)
 factionRedirectAdder()
 
 function search(searchType = 'all', searchingFor = 'all'){ //Current final then is for faction
@@ -20,7 +23,10 @@ function search(searchType = 'all', searchingFor = 'all'){ //Current final then 
 }
 
 function renderOperatorList(operators){
+    clearForm()
     const table = document.createElement('table')
+
+    table.id = "operatorTable"
 
     for(let i = 0; i < operators.length; i += 3){ //i increments 3 per iteration, since three operators go in a table row.
         const tr = document.createElement('tr')
@@ -41,12 +47,18 @@ function renderOperatorList(operators){
 
         table.appendChild(tr)
     }
-    clearForm()
+    
     document.getElementById('mainSection').appendChild(table)
 }
 
 function clearForm(){
+    try{
+    document.getElementById('operatorTable').remove()
     document.getElementById('factionTable').remove()
+    }
+    catch (era){
+        console.log(era)
+    }
 }
 
 function reset(){
