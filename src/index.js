@@ -3,6 +3,7 @@ const prts = document.getElementById('PRTS')
 const factionTable = document.getElementById('factionTable') //This is kept here so when not displayed, it can be brought back.
 const dropTable = document.querySelector('select')
 const mainSection = document.getElementById('mainSection')
+const squad = document.getElementById('squad')
 
 let searching = 'name'
 
@@ -20,6 +21,11 @@ dropTable.addEventListener('change', e=>{
     searching = e.target.value
     searchBar.search.placeholder = `Searching by ${searching}`
 })
+
+document.querySelector('#squad button').addEventListener('click', e=>selectMode(e))
+
+//document.querySelectorAll('#squad button')[1]
+
 factionRedirectAdder()
 
 function search(searchType = 'all', searchingFor = 'all'){
@@ -51,7 +57,13 @@ function renderOperatorList(operators){
             const td = document.createElement('td')
             const li = document.createElement('li')
             li.textContent = operators[j].name
-            li.addEventListener('click', ()=>renderProfile(operators[j]))
+            li.addEventListener('click', ()=>{
+                if (document.querySelector('#squad button').textContent === "Select-Mode: ON"){
+                    selectOperator(operators[j])
+                }
+                else{
+                renderProfile(operators[j])}
+            })
 
             td.appendChild(li)
             tr.appendChild(td)
@@ -112,4 +124,15 @@ function renderProfile(operator){
     tr2.append(classHolder, archetype)
     tr3.appendChild(atk)
 
+}
+
+function selectMode(e){
+    buttonText = e.target.textContent
+
+    if (buttonText === "Select-Mode: ON"){
+        e.target.textContent = "Select-Mode: OFF"
+    }  
+    else if (buttonText === "Select-Mode: OFF"){
+        e.target.textContent = "Select-Mode: ON"
+    }
 }
