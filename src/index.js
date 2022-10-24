@@ -2,6 +2,7 @@ const searchBar = document.querySelector('form')
 const prts = document.getElementById('PRTS')
 const factionTable = document.getElementById('factionTable') //This is kept here so when not displayed, it can be brought back.
 const dropTable = document.querySelector('select')
+const mainSection = document.getElementById('mainSection')
 
 let searching = 'name'
 
@@ -11,23 +12,31 @@ searchBar.addEventListener('submit', e=>{
 })
 
 prts.addEventListener('click', ()=>{
-    Array.from(document.getElementById('mainSection').children).forEach(child => child.remove())
-    document.getElementById('mainSection').appendChild(factionTable)
+    Array.from(mainSection.children).forEach(child => child.remove())
+    mainSection.appendChild(factionTable)
 })
 
 dropTable.addEventListener('change', e=>searching = e.target.value)
 factionRedirectAdder()
 
 function search(searchType = 'all', searchingFor = 'all'){ //Current final then is for faction
+    clearForm()
+
     fetch(`http:localhost:3000/operators`).then(res => res.json())
     .then(operators =>{
         const operatorResults = operators.filter(operator =>operator[searchType] === searchingFor) //Probably refactor this into secondArg
-        renderOperatorList(operatorResults)
+        if(searchType === 'name'){
+            debugger
+            renderProfile(operatorResults[0])
+        }
+        else{
+            debugger
+            renderOperatorList(operatorResults) 
+        }
     })
 }
 
 function renderOperatorList(operators){
-    clearForm()
     const table = document.createElement('table')
 
     table.id = "operatorTable"
@@ -52,11 +61,11 @@ function renderOperatorList(operators){
         table.appendChild(tr)
     }
     
-    document.getElementById('mainSection').appendChild(table)
+    mainSection.appendChild(table)
 }
 
 function clearForm(){
-    Array.from(document.getElementById('mainSection').children).forEach(child => child.remove())
+    Array.from(mainSection.children).forEach(child => child.remove())
 }
 
 function factionRedirectAdder(){
@@ -70,4 +79,31 @@ function factionRedirectAdder(){
             search('faction', factionName)
         })
     })
+}
+
+function renderProfile(operator){
+    const operatorCopy = Object.assign({}, operator)
+    const nameHolder = document.createElement('h2')
+    const table = document.createElement('table')
+    const tr = document.createElement('tr')
+    const tr2 = document.createElement('tr')
+    const tr3 = document.createElement('tr')
+
+    for (let key in operatorCopy){
+        const td = document.createElement('td')
+        td.textContent = operatorCopy[key]
+        operatorCopy[key] = td
+    }
+    const {faction, birthplace, archetype, atk} = operatorCopy
+
+    const classHolder = operator.class
+    nameHolder.textContent = operator.name
+
+
+    document.getElementById('mainSection').append(nameHolder, table)
+    table.append(tr, tr2, tr3)
+    tr.append(faction, birthplace)
+    tr2.append(classHolder, archetype)
+    tr3.appendChild(atk)
+
 }
