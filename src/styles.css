@@ -25,6 +25,7 @@ body {
 form {
     margin:auto;
     max-width: 40%;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
