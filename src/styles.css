@@ -56,3 +56,7 @@ h2 {
     top: 90px;
     right: 25px;
 }
+
+#squad #invisible-me {
+    border-style: none;
+}
