@@ -82,7 +82,7 @@ function factionRedirectAdder(){
 
 function renderProfile(operator){
     clearForm()
-    
+
     const operatorCopy = Object.assign({}, operator)
     const nameHolder = document.createElement('h2')
     const table = document.createElement('table')
@@ -92,13 +92,14 @@ function renderProfile(operator){
 
     for (let key in operatorCopy){
         const td = document.createElement('td')
-        td.textContent = operatorCopy[key]
+        td.textContent = `${key}: ${operatorCopy[key]}`
         operatorCopy[key] = td
     }
     const {faction, birthplace, archetype, atk} = operatorCopy
 
-    const classHolder = operator.class
+    const classHolder = `class: ${operator.class}`
     nameHolder.textContent = operator.name
+    table.id = "operatorProfile"
 
 
     document.getElementById('mainSection').append(nameHolder, table)
