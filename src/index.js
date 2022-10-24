@@ -10,7 +10,11 @@ searchBar.addEventListener('submit', e=>{
     search(searching, e.target.search.value)
 })
 
-prts.addEventListener('click', ()=> reset())
+prts.addEventListener('click', ()=>{
+    Array.from(document.getElementById('mainSection').children).forEach(child => child.remove())
+    document.getElementById('mainSection').appendChild(factionTable)
+})
+
 dropTable.addEventListener('change', e=>searching = e.target.value)
 factionRedirectAdder()
 
@@ -52,18 +56,7 @@ function renderOperatorList(operators){
 }
 
 function clearForm(){
-    try{
-    document.getElementById('operatorTable').remove()
-    document.getElementById('factionTable').remove()
-    }
-    catch (era){
-        console.log(era)
-    }
-}
-
-function reset(){
     Array.from(document.getElementById('mainSection').children).forEach(child => child.remove())
-    document.querySelector('body').appendChild(factionTable)
 }
 
 function factionRedirectAdder(){
