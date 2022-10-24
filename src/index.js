@@ -136,3 +136,8 @@ function selectMode(e){
         e.target.textContent = "Select-Mode: ON"
     }
 }
+
+function selectOperator(operator){ //This is test code
+    console.log(document.querySelector('#squad table td').textContent.includes('Operator'))
+    document.querySelector('#squad tr td').textContent = 5
+}
