@@ -26,11 +26,9 @@ function search(searchType = 'all', searchingFor = 'all'){ //Current final then 
     .then(operators =>{
         const operatorResults = operators.filter(operator =>operator[searchType] === searchingFor) //Probably refactor this into secondArg
         if(searchType === 'name'){
-            debugger
             renderProfile(operatorResults[0])
         }
         else{
-            debugger
             renderOperatorList(operatorResults) 
         }
     })
@@ -49,6 +47,7 @@ function renderOperatorList(operators){
             const td = document.createElement('td')
             const li = document.createElement('li')
             li.textContent = operators[j].name
+            li.addEventListener('click', ()=>renderProfile(operators[j]))
 
             td.appendChild(li)
             tr.appendChild(td)
@@ -82,6 +81,8 @@ function factionRedirectAdder(){
 }
 
 function renderProfile(operator){
+    clearForm()
+    
     const operatorCopy = Object.assign({}, operator)
     const nameHolder = document.createElement('h2')
     const table = document.createElement('table')
