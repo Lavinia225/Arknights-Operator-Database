@@ -6,6 +6,7 @@ const mainSection = document.getElementById('mainSection')
 const squad = document.getElementById('squad')
 const dpsButton = document.getElementById('dps-button')
 const atkValues = []
+const healValues = []
 
 let searching = 'name'
 
@@ -140,14 +141,20 @@ function selectMode(e){
 }
 
 function selectOperator(operator){ //This is test code
-    const nameCell = document.getElementById(`op${atkValues.length + 1}`)
+    const nameCell = document.getElementById(`op${atkValues.length + healValues.length + 1}`)
     nameCell.textContent = operator.name
-    atkValues.push(operator.atk)
+
+    if (operator.class === 'Medic'){
+        healValues.push(operator.atk)
+    }
+    else{
+        atkValues.push(operator.atk)
+    }
 }
 
 function calculateDPS(){
-    document.querySelector('#squad p').textContent = "Current DPS: " + atkValues.reduce(counter, 0)
-
+    document.getElementById('dps-label').textContent = "Current DPS: " + atkValues.reduce(counter, 0)
+    document.getElementById('hps-label').textContent = "Current HPS: " + healValues.reduce(counter, 0)
     function counter(previousValue, currentValue){
         return previousValue += currentValue
     }
