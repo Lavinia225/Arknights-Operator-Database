@@ -5,6 +5,7 @@ const dropTable = document.querySelector('select')
 const mainSection = document.getElementById('mainSection')
 const squad = document.getElementById('squad')
 const dpsButton = document.getElementById('dps-button')
+const deselectButton = document.getElementById('deselect-button')
 const atkValues = []
 const healValues = []
 
@@ -26,6 +27,8 @@ dropTable.addEventListener('change', e=>{
 })
 
 dpsButton.addEventListener('click', ()=> calculateDPS())
+
+deselectButton.addEventListener('click', e=>deselectMode(e))
 
 document.querySelector('#squad button').addEventListener('click', e=>selectMode(e))
 
@@ -157,5 +160,26 @@ function calculateDPS(){
     document.getElementById('hps-label').textContent = "Current HPS: " + healValues.reduce(counter, 0)
     function counter(previousValue, currentValue){
         return previousValue += currentValue
+    }
+}
+
+function deselectMode(e){
+    const operatorTd = Array.from(document.querySelectorAll('#squad tr td'))
+
+    operatorTd.splice(12, 1)
+
+    if (e.target.textContent === "Deselect: OFF"){
+        e.target.textContent = "Deselect: ON"
+
+        operatorTd.map(operator => operator.addEventListener('click', deselectOperator))
+    }
+    else{
+        e.target.textContent = "Deselect: OFF"
+        operatorTd.map(operator => operator.removeEventListener('click', deselectOperator))
+    }
+
+    function deselectOperator(e){
+        e.target.textContent = `Operator ${e.target.id.substring(2)}`
+        console.log('hit')
     }
 }
