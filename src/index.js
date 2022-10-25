@@ -4,6 +4,8 @@ const factionTable = document.getElementById('factionTable') //This is kept here
 const dropTable = document.querySelector('select')
 const mainSection = document.getElementById('mainSection')
 const squad = document.getElementById('squad')
+const dpsButton = document.querySelector('#squad:last-child')
+const atkValues = []
 
 let searching = 'name'
 
@@ -21,6 +23,8 @@ dropTable.addEventListener('change', e=>{
     searching = e.target.value
     searchBar.search.placeholder = `Searching by ${searching}`
 })
+
+dpsButton.addEventListener('click', ()=> console.log(atkValues))
 
 document.querySelector('#squad button').addEventListener('click', e=>selectMode(e))
 
@@ -138,6 +142,8 @@ function selectMode(e){
 }
 
 function selectOperator(operator){ //This is test code
-    console.log(document.querySelector('#squad table td').textContent.includes('Operator'))
-    document.querySelector('#squad tr td').textContent = 5
+    const nameCell = document.getElementById(`op${atkValues.length + 1}`)
+    console.log(nameCell)
+    nameCell.textContent = operator.name
+    atkValues.push(operator.atk)
 }
