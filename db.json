@@ -182,7 +182,7 @@
     },
     {
       "name": "Ptilopsis",
-      "faction": "Rhine Labs",
+      "faction": "Rhine Lab",
       "birthplace": "Columbia",
       "class": "Medic",
       "archetype": "Multi-target Medic",
@@ -998,6 +998,87 @@
       "archetype": "ST/Core Caster",
       "id": 111,
       "atk": 340
+    },
+    {
+      "name": "Chestnut",
+      "faction": "Rhodes Island",
+      "birthplace": "Undisclosed",
+      "class": "Medic",
+      "archetype": "Wandering Medic",
+      "attack": 378,
+      "id": 112
+    },
+    {
+      "name": "Mulberry",
+      "faction": "Yan",
+      "birthplace": "Yan",
+      "class": "Medic",
+      "archetype": "Wandering Medic",
+      "attack": 368,
+      "id": 113
+    },
+    {
+      "name": "Kal'tsit",
+      "faction": "Rhodes Island",
+      "birthplace": "Rhodes Island",
+      "class": "Medic",
+      "archetype": "Medic",
+      "attack": 457,
+      "id": 114
+    },
+    {
+      "name": "Tuye",
+      "faction": "Sargon",
+      "birthplace": "Sargon",
+      "class": "Medic",
+      "archetype": "Medic",
+      "attack": 468,
+      "id": 115
+    },
+    {
+      "name": "Touch",
+      "faction": "Unknown",
+      "birthplace": "Unknown",
+      "class": "Medic",
+      "archetype": "Medic",
+      "attack": 569,
+      "id": 116
+    },
+    {
+      "name": "Folinic",
+      "faction": "Rhodes Island",
+      "birthplace": "Ursus",
+      "class": "Medic",
+      "archetype": "Medic",
+      "attack": 455,
+      "id": 117
+    },
+    {
+      "name": "Nightingale",
+      "faction": "Followers",
+      "birthplace": "Kazdel",
+      "class": "Medic",
+      "archetype": "Multi-target Medic",
+      "attack": 326,
+      "id": 118
+    },
+    {
+      "name": "Warfarin",
+      "faction": "Rhodes Island",
+      "birthplace": "Kazdel",
+      "class": "Medic",
+      "archetype": "Medic",
+      "attack": 479,
+      "id": 119
+    },
+    {
+      "name": "Silence",
+      "faction": "Rhine Lab",
+      "birthplace": "Columbia",
+      "class": "Medic",
+      "archetype": "Medic",
+      "attack": 457,
+      "id": 120
     }
   ]
 }
