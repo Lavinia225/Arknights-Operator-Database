@@ -4,7 +4,7 @@ const factionTable = document.getElementById('factionTable') //This is kept here
 const dropTable = document.querySelector('select')
 const mainSection = document.getElementById('mainSection')
 const squad = document.getElementById('squad')
-const dpsButton = document.querySelector('#squad:last-child')
+const dpsButton = document.getElementById('dps-button')
 const atkValues = []
 
 let searching = 'name'
@@ -24,11 +24,9 @@ dropTable.addEventListener('change', e=>{
     searchBar.search.placeholder = `Searching by ${searching}`
 })
 
-dpsButton.addEventListener('click', ()=> console.log(atkValues))
+dpsButton.addEventListener('click', ()=> calculateDPS())
 
 document.querySelector('#squad button').addEventListener('click', e=>selectMode(e))
-
-//document.querySelectorAll('#squad button')[1]
 
 factionRedirectAdder()
 
@@ -143,7 +141,14 @@ function selectMode(e){
 
 function selectOperator(operator){ //This is test code
     const nameCell = document.getElementById(`op${atkValues.length + 1}`)
-    console.log(nameCell)
     nameCell.textContent = operator.name
     atkValues.push(operator.atk)
+}
+
+function calculateDPS(){
+    document.querySelector('#squad p').textContent = "Current DPS: " + atkValues.reduce(counter, 0)
+
+    function counter(previousValue, currentValue){
+        return previousValue += currentValue
+    }
 }
