@@ -1493,6 +1493,69 @@
       "archetype": "Duelist/Dreadnought",
       "attack": 353,
       "id": 166
+    },
+    {
+      "name": "Heidi",
+      "faction": "Victoria",
+      "birthplace": "Victoria",
+      "class": "Supporter",
+      "archetype": "Aura/Bard",
+      "attack": 306,
+      "id": 167
+    },
+    {
+      "name": "Gnosis",
+      "faction": "Karlan Commercial",
+      "birthplace": "Kjerag",
+      "class": "Supporter",
+      "archetype": "Debuffer/Hexer",
+      "attack": 429,
+      "id": 168
+    },
+    {
+      "name": "Skadi the Corrupting Heart",
+      "faction": "Ægir",
+      "birthplace": "Ægir",
+      "class": "Supporter",
+      "archetype": "Aura/Bard",
+      "attack": 347,
+      "id": 169
+    },
+    {
+      "name": "Suzuran",
+      "faction": "Siracusa",
+      "birthplace": "Higashi",
+      "class": "Supporter",
+      "archetype": "Slower/Decel Binder",
+      "attack": 491,
+      "id": 170
+    },
+    {
+      "name": "Tsukinogi",
+      "faction": "Higashi",
+      "birthplace": "Higashi",
+      "class": "Supporter",
+      "archetype": "Buffer/Abjurer",
+      "attack": 426,
+      "id": 171
+    },
+    {
+      "name": "Magallan",
+      "faction": "Rhine Lab",
+      "birthplace": "Columbia",
+      "class": "Supporter",
+      "archetype": "Summoner",
+      "attack": 447,
+      "id": 172
+    },
+    {
+      "name": "Mayer",
+      "faction": "Rhine Lab",
+      "birthplace": "Columbia",
+      "class": "Supporter",
+      "archetype": "Summoner",
+      "attack": 427,
+      "id": 173
     }
   ]
 }
