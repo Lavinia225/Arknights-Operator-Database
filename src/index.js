@@ -169,13 +169,13 @@ function deselectEventAdder(){
 
     operatorTd.map(operator => operator.addEventListener('click', deselectOperator))
 
-    function deselectOperator(e){
-        if (e.target.textContent.startsWith('Operator')){
+}
 
-        }
-        else{
-        e.target.textContent = `Operator ${e.target.id.substring(2)}`
-        atkValues.splice(e.target.id.substring(2), 1)
+function deselectOperator(e){ //make td ID equal to atk / heal array index position
+    if (e.target.textContent.startsWith('Operator')){
+
     }
-}
-}
+    else{
+    e.target.textContent = `Operator ${e.target.id.substring(2)}`
+    atkValues.splice(e.target.id.substring(2) - 1, 1)
+}}

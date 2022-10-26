@@ -1079,6 +1079,420 @@
       "archetype": "Medic",
       "attack": 457,
       "id": 120
+    },
+    {
+      "name": "Nearl the Radiant Knight",
+      "faction": "Kazimierz",
+      "birthplace": "Kazimierz",
+      "class": "Guard",
+      "archetype": "Duelist/Dreadnought",
+      "attack": 1003,
+      "id": 121
+    },
+    {
+      "name": "Tequila",
+      "faction": "Bolívar",
+      "birthplace": "Bolívar",
+      "class": "Guard",
+      "archetype": "Liberator",
+      "attack": 290,
+      "id": 122
+    },
+    {
+      "name": "La Pluma",
+      "faction": "Bolívar",
+      "birthplace": "Bolívar",
+      "class": "Guard",
+      "archetype": "Reaper",
+      "attack": 625,
+      "id": 123
+    },
+    {
+      "name": "Pallas",
+      "faction": "Minos",
+      "birthplace": "Minos",
+      "class": "Guard",
+      "archetype": "Support/Instructor",
+      "attack": 650,
+      "id": 124
+    },
+    {
+      "name": "Akafuyu",
+      "faction": "Higashi",
+      "birthplace": "Higashi",
+      "class": "Guard",
+      "archetype": "Enmity/Musha",
+      "attack": 697,
+      "id": 125
+    },
+    {
+      "name": "Tachanka",
+      "faction": "Team Rainbow",
+      "birthplace": "Unknown",
+      "class": "Guard",
+      "archetype": "Dualstrike/Swordmaster",
+      "attack": 585,
+      "id": 126
+    },
+    {
+      "name": "Mountain",
+      "faction": "Columbia",
+      "birthplace": "Columbia",
+      "class": "Guard",
+      "archetype": "Brawler/Fighter",
+      "attack": 549,
+      "id": 127
+    },
+    {
+      "name": "Jackie",
+      "faction": "Columbia",
+      "birthplace": "Columbia",
+      "class": "Guard",
+      "archetype": "Brawler/Fighter",
+      "attack": 514,
+      "id": 128
+    },
+    {
+      "name": "Amiya (Guard)",
+      "faction": "Rhodes Island",
+      "birthplace": "Rhodes Island",
+      "class": "Guard",
+      "archetype": "Arts Fighter",
+      "attack": 625,
+      "id": 129
+    },
+    {
+      "name": "Whislash",
+      "faction": "Kazimierz",
+      "birthplace": "Kazimierz",
+      "class": "Guard",
+      "archetype": "Support/Instructor",
+      "attack": 619,
+      "id": 130
+    },
+    {
+      "name": "Surtr",
+      "faction": "Rhodes Island",
+      "birthplace": "Unknown",
+      "class": "Guard",
+      "archetype": "Arts Fighter",
+      "attack": 629,
+      "id": 131
+    },
+    {
+      "name": "Arene",
+      "faction": "Laterano",
+      "birthplace": "Laterano",
+      "class": "Guard",
+      "archetype": "Ranged/Lord",
+      "attack": 622,
+      "id": 132
+    },
+    {
+      "name": "Sharp",
+      "faction": "Unknown",
+      "birthplace": "Unknown",
+      "class": "Guard",
+      "archetype": "Duelist/Dreadnought",
+      "attack": 921,
+      "id": 133
+    },
+    {
+      "name": "Flint",
+      "faction": "Sargon",
+      "birthplace": "Sargon",
+      "class": "Guard",
+      "archetype": "Brawler/Fighter",
+      "attack": 519,
+      "id": 134
+    },
+    {
+      "name": "Thorns",
+      "faction": "Iberia",
+      "birthplace": "Iberia",
+      "class": "Guard",
+      "archetype": "Ranged/Lord",
+      "attack": 665,
+      "id": 135
+    },
+    {
+      "name": "Ayerscarpe",
+      "faction": "Rim Billiton",
+      "birthplace": "Rim Billiton",
+      "class": "Guard",
+      "archetype": "Ranged/Lord",
+      "attack": 638,
+      "id": 136
+    },
+    {
+      "name": "Sideroca",
+      "faction": "Minos",
+      "birthplace": "Minos",
+      "class": "Guard",
+      "archetype": "Arts Fighter",
+      "attack": 590,
+      "id": 137
+    },
+    {
+      "name": "Cutter",
+      "faction": "Columbia",
+      "birthplace": "Columbia",
+      "class": "Guard",
+      "archetype": "Dualstrike/Swordmaster",
+      "attack": 552,
+      "id": 138
+    },
+    {
+      "name": "Conviction",
+      "faction": "Minos",
+      "birthplace": "Minos",
+      "class": "Guard",
+      "archetype": "Duelist/Dreadnought",
+      "attack": 906,
+      "id": 139
+    },
+    {
+      "name": "Bibeak",
+      "faction": "Sami",
+      "birthplace": "Sami",
+      "class": "Guard",
+      "archetype": "Dualstrike/Swordmaster",
+      "attack": 567,
+      "id": 140
+    },
+    {
+      "name": "Utage",
+      "faction": "Higashi",
+      "birthplace": "Higashi",
+      "class": "Guard",
+      "archetype": "Enmity/Musha",
+      "attack": 676,
+      "id": 141
+    },
+    {
+      "name": "Blaze",
+      "faction": "Rhodes Island",
+      "birthplace": "Victoria",
+      "class": "Guard",
+      "archetype": "AoE/Centurion",
+      "attack": 703,
+      "id": 142
+    },
+    {
+      "name": "Broca",
+      "faction": "Chiave Gang",
+      "birthplace": "Siracusa",
+      "class": "Guard",
+      "archetype": "AoE/Centurion",
+      "attack": 716,
+      "id": 143
+    },
+    {
+      "name": "Flamebringer",
+      "faction": "Rhodes Island",
+      "birthplace": "Kazdel",
+      "class": "Guard",
+      "archetype": "Duelist/Dreadnought",
+      "attack": 878,
+      "id": 144
+    },
+    {
+      "name": "Hellagur",
+      "faction": "Ursus",
+      "birthplace": "Ursus",
+      "class": "Guard",
+      "archetype": "Enmity/Musha",
+      "attack": 718,
+      "id": 145
+    },
+    {
+      "name": "Astesia",
+      "faction": "Columbia",
+      "birthplace": "Columbia",
+      "class": "Guard",
+      "archetype": "Arts Fighter",
+      "attack": 628,
+      "id": 146
+    },
+    {
+      "name": "Swire",
+      "faction": "Lungmen Guard Department",
+      "birthplace": "Lungmen",
+      "class": "Guard",
+      "archetype": "Support/Instructor",
+      "attack": 629,
+      "id": 147
+    },
+    {
+      "name": "Ch'en",
+      "faction": "Lungmen Guard Department",
+      "birthplace": "Lungmen",
+      "class": "Guard",
+      "archetype": "Dualstrike/Swordmaster",
+      "attack": 562,
+      "id": 148
+    },
+    {
+      "name": "Popukar",
+      "faction": "Rhodes Island",
+      "birthplace": "Rim Billiton",
+      "class": "Guard",
+      "archetype": "AoE/Centurion",
+      "attack": 495,
+      "id": 149
+    },
+    {
+      "name": "Skadi",
+      "faction": "Abyssal Hunters",
+      "birthplace": "Ægir",
+      "class": "Guard",
+      "archetype": "Duelist/Dreadnought",
+      "attack": 957,
+      "id": 150
+    },
+    {
+      "name": "Beehunter",
+      "faction": "Ursus",
+      "birthplace": "Ursus",
+      "class": "Guard",
+      "archetype": "Brawler/Fighter",
+      "attack": 499,
+      "id": 151
+    },
+    {
+      "name": "Midnight",
+      "faction": "Rhodes Island",
+      "birthplace": "Far East",
+      "class": "Guard",
+      "archetype": "Ranged/Lord",
+      "attack": 497,
+      "id": 152
+    },
+    {
+      "name": "Savage",
+      "faction": "Rim Billiton",
+      "birthplace": "Rim Billiton",
+      "class": "Guard",
+      "archetype": "AoE/Centurion",
+      "attack": 662,
+      "id": 153
+    },
+    {
+      "name": "SilverAsh",
+      "faction": "Karlan Commercial",
+      "birthplace": "Kjerag",
+      "class": "Guard",
+      "archetype": "Ranged/Lord",
+      "attack": 667,
+      "id": 154
+    },
+    {
+      "name": "Specter",
+      "faction": "Abyssal Hunters",
+      "birthplace": "Ægir",
+      "class": "Guard",
+      "archetype": "AoE/Centurion",
+      "attack": 681,
+      "id": 155
+    },
+    {
+      "name": "Lappland",
+      "faction": "Siracusa",
+      "birthplace": "Siracusa",
+      "class": "Guard",
+      "archetype": "Ranged/Lord",
+      "attack": 652,
+      "id": 156
+    },
+    {
+      "name": "Lappland",
+      "faction": "Siracusa",
+      "birthplace": "Siracusa",
+      "class": "Guard",
+      "archetype": "Ranged/Lord",
+      "attack": 652,
+      "id": 157
+    },
+    {
+      "name": "Indra",
+      "faction": "Glasglow",
+      "birthplace": "Unknown",
+      "class": "Guard",
+      "archetype": "Brawler/Fighter",
+      "attack": 504,
+      "id": 158
+    },
+    {
+      "name": "Franka",
+      "faction": "Blacksteel",
+      "birthplace": "Columbia",
+      "class": "Guard",
+      "archetype": "Duelist/Dreadnought",
+      "attack": 895,
+      "id": 159
+    },
+    {
+      "name": "Mousse",
+      "faction": "Victoria",
+      "birthplace": "Victoria",
+      "class": "Guard",
+      "archetype": "Arts Fighter",
+      "attack": 625,
+      "id": 160
+    },
+    {
+      "name": "Estelle",
+      "faction": "Sargon",
+      "birthplace": "Undisclosed",
+      "class": "Guard",
+      "archetype": "AoE/Centurion",
+      "attack": 666,
+      "id": 161
+    },
+    {
+      "name": "Frostleaf",
+      "faction": "Rhodes Island",
+      "birthplace": "Columbia",
+      "class": "Guard",
+      "archetype": "Ranged/Lord",
+      "attack": 642,
+      "id": 162
+    },
+    {
+      "name": "Matoimaru",
+      "faction": "Higashi",
+      "birthplace": "The Far East",
+      "class": "Guard",
+      "archetype": "Duelist/Dreadnought",
+      "attack": 893,
+      "id": 163
+    },
+    {
+      "name": "Dobermann",
+      "faction": "Rhodes Island",
+      "birthplace": "Bolívar",
+      "class": "Guard",
+      "archetype": "Support/Instructor",
+      "attack": 588,
+      "id": 164
+    },
+    {
+      "name": "Melantha",
+      "faction": "Rhodes Island",
+      "birthplace": "Victoria",
+      "class": "Guard",
+      "archetype": "Duelist/Dreadnought",
+      "attack": 738,
+      "id": 165
+    },
+    {
+      "name": "Castle-3",
+      "faction": "Rhodes Island",
+      "birthplace": "Columbia",
+      "class": "Guard",
+      "archetype": "Duelist/Dreadnought",
+      "attack": 353,
+      "id": 166
     }
   ]
 }
