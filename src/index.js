@@ -5,7 +5,6 @@ const dropTable = document.querySelector('select')
 const mainSection = document.getElementById('mainSection')
 const squad = document.getElementById('squad')
 const dpsButton = document.getElementById('dps-button')
-const deselectButton = document.getElementById('deselect-button')
 const atkValues = []
 const healValues = []
 
@@ -28,11 +27,10 @@ dropTable.addEventListener('change', e=>{
 
 dpsButton.addEventListener('click', ()=> calculateDPS())
 
-deselectButton.addEventListener('click', e=>deselectMode(e))
-
 document.querySelector('#squad button').addEventListener('click', e=>selectMode(e))
 
 factionRedirectAdder()
+deselectEventAdder()
 
 function search(searchType = 'all', searchingFor = 'all'){
     clearMain()
@@ -164,24 +162,20 @@ function calculateDPS(){
     }
 }
 
-function deselectMode(e){
+function deselectEventAdder(){
     const operatorTd = Array.from(document.querySelectorAll('#squad tr td'))
 
     operatorTd.splice(12, 1)
 
-    if (e.target.textContent === "Deselect: OFF"){
-        e.target.textContent = "Deselect: ON"
+    operatorTd.map(operator => operator.addEventListener('click', deselectOperator))
 
-        operatorTd.map(operator => operator.addEventListener('click', deselectOperator))
-    }
-    else{
-        e.target.textContent = "Deselect: OFF"
-        operatorTd.map(operator => operator.removeEventListener('click', deselectOperator)) //This doesn't work
-    }
+    function deselectOperator(e){
+        if (e.target.textContent.startsWith('Operator')){
 
-    function deselectOperator(e){ 
+        }
+        else{
         e.target.textContent = `Operator ${e.target.id.substring(2)}`
         atkValues.splice(e.target.id.substring(2), 1)
-        console.log('hit')
     }
+}
 }
