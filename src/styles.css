@@ -60,3 +60,8 @@ h2 {
 #squad #invisible-me {
     border-style: none;
 }
+
+#operatorTable{
+    margin: auto;
+    max-width: 50%
+}

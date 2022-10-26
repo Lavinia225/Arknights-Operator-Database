@@ -149,6 +149,7 @@ function selectOperator(operator){ //This is test code
 
     if (operator.class === 'Medic'){
         healValues.push(operator.atk)
+        nameCell.name = 'Medic'
     }
     else{
         atkValues.push(operator.atk)
@@ -175,11 +176,12 @@ function deselectMode(e){
     }
     else{
         e.target.textContent = "Deselect: OFF"
-        operatorTd.map(operator => operator.removeEventListener('click', deselectOperator))
+        operatorTd.map(operator => operator.removeEventListener('click', deselectOperator)) //This doesn't work
     }
 
-    function deselectOperator(e){
+    function deselectOperator(e){ 
         e.target.textContent = `Operator ${e.target.id.substring(2)}`
+        atkValues.splice(e.target.id.substring(2), 1)
         console.log('hit')
     }
 }
