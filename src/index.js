@@ -161,11 +161,10 @@ function selectOperator(operator){
 }
 
 function calculateDPS(){
-    const tdArray = Array.from(document.querySelectorAll('#squad tr td'))
-    tdArray.map(td => td.id)
-    console.log(tdArray)
+    const offensiveValues = Object.values(atkValues).map(item => item.atk)
+    const healValues = Object.values(atkValues).map(item => item.heal)
     
-    document.getElementById('dps-label').textContent = "Current DPS: " + atkValues.reduce(counter, 0)
+    document.getElementById('dps-label').textContent = "Current DPS: " + offensiveValues.reduce(counter, 0)
     document.getElementById('hps-label').textContent = "Current HPS: " + healValues.reduce(counter, 0)
     function counter(previousValue, currentValue){
         return previousValue += currentValue
