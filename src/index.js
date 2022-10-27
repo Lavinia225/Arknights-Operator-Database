@@ -111,17 +111,44 @@ function renderProfile(operator){
     const tr2 = document.createElement('tr')
     const tr3 = document.createElement('tr')
     const classHolder = document.createElement('td')
-
+    const form = document.createElement('form')
+    const showEditForm = document.createElement('button')
+    const submitEditButton = document.createElement('input')
     for (let key in operatorCopy){
         const td = document.createElement('td')
         td.textContent = `${key}: ${operatorCopy[key]}`
         operatorCopy[key] = td
     }
+
+    for (let key in operator){
+        if (key === 'id'){
+
+        }
+        else{
+        const label = document.createElement('label')
+        const input = document.createElement('input')
+
+        label.setAttribute('for', key)
+        label.textContent = key
+        input.type = 'text'
+        input.name = key
+        input.value = operator[key]
+
+        form.appendChild(label)
+        form.appendChild(input)
+        }
+    }
+
     const {faction, birthplace, archetype, atk} = operatorCopy
 
     classHolder.textContent = `class: ${operator.class}`
     nameHolder.textContent = operator.name
     table.id = "operatorProfile"
+    form.hidden = true
+    form.id = 'editForm'
+    showEditForm.textContent = 'Click to Edit'
+    submitEditButton.value = 'Submit'
+    submitEditButton.type = 'submit'
 
     nameHolder.addEventListener('click', ()=>{
         if (document.querySelector('#squad button').textContent === "Select-Mode: ON"){
@@ -129,13 +156,22 @@ function renderProfile(operator){
         }
     })
 
+    showEditForm.addEventListener('click', ()=>{
+        if (form.hidden === false){
+            form.hidden = true
+        }
+        else{
+            form.hidden = false
+        }
+    })
 
-    document.getElementById('mainSection').append(nameHolder, table)
+    form.appendChild(submitEditButton)
+    mainSection.append(nameHolder, table)
     table.append(tr, tr2, tr3)
     tr.append(faction, birthplace)
     tr2.append(classHolder, archetype)
-    tr3.appendChild(atk)
-
+    tr3.append(atk, showEditForm)
+    mainSection.appendChild(form)
 }
 
 function selectMode(e){
