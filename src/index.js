@@ -5,8 +5,9 @@ const dropTable = document.querySelector('select')
 const mainSection = document.getElementById('mainSection')
 const squad = document.getElementById('squad')
 const dpsButton = document.getElementById('dps-button')
-const atkValues = []
-const healValues = []
+const atkValues = {
+
+}
 
 let searching = 'name'
 
@@ -141,20 +142,29 @@ function selectMode(e){
     }
 }
 
-function selectOperator(operator){ //This is test code
-    const nameCell = document.getElementById(`op${atkValues.length + healValues.length + 1}`)
+function selectOperator(operator){
+    const nameCell = findFreeCell()
     nameCell.textContent = operator.name
 
     if (operator.class === 'Medic'){
-        healValues.push(operator.atk)
-        nameCell.name = 'Medic'
+        atkValues[nameCell.id] = {
+            atk: 0,
+            heal: operator.atk
+        }
     }
     else{
-        atkValues.push(operator.atk)
+        atkValues[nameCell.id] = {
+            atk: operator.atk,
+            heal: 0
+        }
     }
 }
 
 function calculateDPS(){
+    const tdArray = Array.from(document.querySelectorAll('#squad tr td'))
+    tdArray.map(td => td.id)
+    console.log(tdArray)
+    
     document.getElementById('dps-label').textContent = "Current DPS: " + atkValues.reduce(counter, 0)
     document.getElementById('hps-label').textContent = "Current HPS: " + healValues.reduce(counter, 0)
     function counter(previousValue, currentValue){
@@ -179,3 +189,25 @@ function deselectOperator(e){ //make td ID equal to atk / heal array index posit
     e.target.textContent = `Operator ${e.target.id.substring(2)}`
     atkValues.splice(e.target.id.substring(2) - 1, 1)
 }}
+
+function findFreeCell(){
+    const operatorTd = Array.from(document.querySelectorAll('#squad tr td'))
+    
+    return operatorTd.find(td=>{
+        return td.textContent.startsWith('Operator')
+    })
+}
+
+/*atkValues: {
+    op1: {
+        atk: 0,
+        hp: 0
+        },
+    op2: {....
+    ID of TD as key*/
+
+    /*
+        array of td elements
+        check if element.textContent contains 'Operator'
+        take the first one that returns true and use it as namecell
+    */

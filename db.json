@@ -1005,7 +1005,7 @@
       "birthplace": "Undisclosed",
       "class": "Medic",
       "archetype": "Wandering Medic",
-      "attack": 378,
+      "atk": 378,
       "id": 112
     },
     {
@@ -1014,7 +1014,7 @@
       "birthplace": "Yan",
       "class": "Medic",
       "archetype": "Wandering Medic",
-      "attack": 368,
+      "atk": 368,
       "id": 113
     },
     {
@@ -1023,7 +1023,7 @@
       "birthplace": "Rhodes Island",
       "class": "Medic",
       "archetype": "Medic",
-      "attack": 457,
+      "atk": 457,
       "id": 114
     },
     {
@@ -1032,7 +1032,7 @@
       "birthplace": "Sargon",
       "class": "Medic",
       "archetype": "Medic",
-      "attack": 468,
+      "atk": 468,
       "id": 115
     },
     {
@@ -1041,7 +1041,7 @@
       "birthplace": "Unknown",
       "class": "Medic",
       "archetype": "Medic",
-      "attack": 569,
+      "atk": 569,
       "id": 116
     },
     {
@@ -1050,7 +1050,7 @@
       "birthplace": "Ursus",
       "class": "Medic",
       "archetype": "Medic",
-      "attack": 455,
+      "atk": 455,
       "id": 117
     },
     {
@@ -1059,7 +1059,7 @@
       "birthplace": "Kazdel",
       "class": "Medic",
       "archetype": "Multi-target Medic",
-      "attack": 326,
+      "atk": 326,
       "id": 118
     },
     {
@@ -1068,7 +1068,7 @@
       "birthplace": "Kazdel",
       "class": "Medic",
       "archetype": "Medic",
-      "attack": 479,
+      "atk": 479,
       "id": 119
     },
     {
@@ -1077,7 +1077,7 @@
       "birthplace": "Columbia",
       "class": "Medic",
       "archetype": "Medic",
-      "attack": 457,
+      "atk": 457,
       "id": 120
     },
     {
@@ -1086,7 +1086,7 @@
       "birthplace": "Kazimierz",
       "class": "Guard",
       "archetype": "Duelist/Dreadnought",
-      "attack": 1003,
+      "atk": 1003,
       "id": 121
     },
     {
@@ -1095,7 +1095,7 @@
       "birthplace": "Bolívar",
       "class": "Guard",
       "archetype": "Liberator",
-      "attack": 290,
+      "atk": 290,
       "id": 122
     },
     {
@@ -1104,7 +1104,7 @@
       "birthplace": "Bolívar",
       "class": "Guard",
       "archetype": "Reaper",
-      "attack": 625,
+      "atk": 625,
       "id": 123
     },
     {
@@ -1113,7 +1113,7 @@
       "birthplace": "Minos",
       "class": "Guard",
       "archetype": "Support/Instructor",
-      "attack": 650,
+      "atk": 650,
       "id": 124
     },
     {
@@ -1122,7 +1122,7 @@
       "birthplace": "Higashi",
       "class": "Guard",
       "archetype": "Enmity/Musha",
-      "attack": 697,
+      "atk": 697,
       "id": 125
     },
     {
@@ -1131,7 +1131,7 @@
       "birthplace": "Unknown",
       "class": "Guard",
       "archetype": "Dualstrike/Swordmaster",
-      "attack": 585,
+      "atk": 585,
       "id": 126
     },
     {
@@ -1140,7 +1140,7 @@
       "birthplace": "Columbia",
       "class": "Guard",
       "archetype": "Brawler/Fighter",
-      "attack": 549,
+      "atk": 549,
       "id": 127
     },
     {
@@ -1149,7 +1149,7 @@
       "birthplace": "Columbia",
       "class": "Guard",
       "archetype": "Brawler/Fighter",
-      "attack": 514,
+      "atk": 514,
       "id": 128
     },
     {
@@ -1158,7 +1158,7 @@
       "birthplace": "Rhodes Island",
       "class": "Guard",
       "archetype": "Arts Fighter",
-      "attack": 625,
+      "atk": 625,
       "id": 129
     },
     {
@@ -1167,7 +1167,7 @@
       "birthplace": "Kazimierz",
       "class": "Guard",
       "archetype": "Support/Instructor",
-      "attack": 619,
+      "atk": 619,
       "id": 130
     },
     {
@@ -1176,7 +1176,7 @@
       "birthplace": "Unknown",
       "class": "Guard",
       "archetype": "Arts Fighter",
-      "attack": 629,
+      "atk": 629,
       "id": 131
     },
     {
@@ -1185,7 +1185,7 @@
       "birthplace": "Laterano",
       "class": "Guard",
       "archetype": "Ranged/Lord",
-      "attack": 622,
+      "atk": 622,
       "id": 132
     },
     {
@@ -1194,7 +1194,7 @@
       "birthplace": "Unknown",
       "class": "Guard",
       "archetype": "Duelist/Dreadnought",
-      "attack": 921,
+      "atk": 921,
       "id": 133
     },
     {
@@ -1203,7 +1203,7 @@
       "birthplace": "Sargon",
       "class": "Guard",
       "archetype": "Brawler/Fighter",
-      "attack": 519,
+      "atk": 519,
       "id": 134
     },
     {
@@ -1212,7 +1212,7 @@
       "birthplace": "Iberia",
       "class": "Guard",
       "archetype": "Ranged/Lord",
-      "attack": 665,
+      "atk": 665,
       "id": 135
     },
     {
@@ -1221,7 +1221,7 @@
       "birthplace": "Rim Billiton",
       "class": "Guard",
       "archetype": "Ranged/Lord",
-      "attack": 638,
+      "atk": 638,
       "id": 136
     },
     {
@@ -1230,7 +1230,7 @@
       "birthplace": "Minos",
       "class": "Guard",
       "archetype": "Arts Fighter",
-      "attack": 590,
+      "atk": 590,
       "id": 137
     },
     {
@@ -1239,7 +1239,7 @@
       "birthplace": "Columbia",
       "class": "Guard",
       "archetype": "Dualstrike/Swordmaster",
-      "attack": 552,
+      "atk": 552,
       "id": 138
     },
     {
@@ -1248,7 +1248,7 @@
       "birthplace": "Minos",
       "class": "Guard",
       "archetype": "Duelist/Dreadnought",
-      "attack": 906,
+      "atk": 906,
       "id": 139
     },
     {
@@ -1257,7 +1257,7 @@
       "birthplace": "Sami",
       "class": "Guard",
       "archetype": "Dualstrike/Swordmaster",
-      "attack": 567,
+      "atk": 567,
       "id": 140
     },
     {
@@ -1266,7 +1266,7 @@
       "birthplace": "Higashi",
       "class": "Guard",
       "archetype": "Enmity/Musha",
-      "attack": 676,
+      "atk": 676,
       "id": 141
     },
     {
@@ -1275,7 +1275,7 @@
       "birthplace": "Victoria",
       "class": "Guard",
       "archetype": "AoE/Centurion",
-      "attack": 703,
+      "atk": 703,
       "id": 142
     },
     {
@@ -1284,7 +1284,7 @@
       "birthplace": "Siracusa",
       "class": "Guard",
       "archetype": "AoE/Centurion",
-      "attack": 716,
+      "atk": 716,
       "id": 143
     },
     {
@@ -1293,7 +1293,7 @@
       "birthplace": "Kazdel",
       "class": "Guard",
       "archetype": "Duelist/Dreadnought",
-      "attack": 878,
+      "atk": 878,
       "id": 144
     },
     {
@@ -1302,7 +1302,7 @@
       "birthplace": "Ursus",
       "class": "Guard",
       "archetype": "Enmity/Musha",
-      "attack": 718,
+      "atk": 718,
       "id": 145
     },
     {
@@ -1311,7 +1311,7 @@
       "birthplace": "Columbia",
       "class": "Guard",
       "archetype": "Arts Fighter",
-      "attack": 628,
+      "atk": 628,
       "id": 146
     },
     {
@@ -1320,7 +1320,7 @@
       "birthplace": "Lungmen",
       "class": "Guard",
       "archetype": "Support/Instructor",
-      "attack": 629,
+      "atk": 629,
       "id": 147
     },
     {
@@ -1329,7 +1329,7 @@
       "birthplace": "Lungmen",
       "class": "Guard",
       "archetype": "Dualstrike/Swordmaster",
-      "attack": 562,
+      "atk": 562,
       "id": 148
     },
     {
@@ -1338,7 +1338,7 @@
       "birthplace": "Rim Billiton",
       "class": "Guard",
       "archetype": "AoE/Centurion",
-      "attack": 495,
+      "atk": 495,
       "id": 149
     },
     {
@@ -1347,7 +1347,7 @@
       "birthplace": "Ægir",
       "class": "Guard",
       "archetype": "Duelist/Dreadnought",
-      "attack": 957,
+      "atk": 957,
       "id": 150
     },
     {
@@ -1356,7 +1356,7 @@
       "birthplace": "Ursus",
       "class": "Guard",
       "archetype": "Brawler/Fighter",
-      "attack": 499,
+      "atk": 499,
       "id": 151
     },
     {
@@ -1365,7 +1365,7 @@
       "birthplace": "Far East",
       "class": "Guard",
       "archetype": "Ranged/Lord",
-      "attack": 497,
+      "atk": 497,
       "id": 152
     },
     {
@@ -1374,7 +1374,7 @@
       "birthplace": "Rim Billiton",
       "class": "Guard",
       "archetype": "AoE/Centurion",
-      "attack": 662,
+      "atk": 662,
       "id": 153
     },
     {
@@ -1383,7 +1383,7 @@
       "birthplace": "Kjerag",
       "class": "Guard",
       "archetype": "Ranged/Lord",
-      "attack": 667,
+      "atk": 667,
       "id": 154
     },
     {
@@ -1392,7 +1392,7 @@
       "birthplace": "Ægir",
       "class": "Guard",
       "archetype": "AoE/Centurion",
-      "attack": 681,
+      "atk": 681,
       "id": 155
     },
     {
@@ -1401,7 +1401,7 @@
       "birthplace": "Siracusa",
       "class": "Guard",
       "archetype": "Ranged/Lord",
-      "attack": 652,
+      "atk": 652,
       "id": 156
     },
     {
@@ -1410,7 +1410,7 @@
       "birthplace": "Siracusa",
       "class": "Guard",
       "archetype": "Ranged/Lord",
-      "attack": 652,
+      "atk": 652,
       "id": 157
     },
     {
@@ -1419,7 +1419,7 @@
       "birthplace": "Unknown",
       "class": "Guard",
       "archetype": "Brawler/Fighter",
-      "attack": 504,
+      "atk": 504,
       "id": 158
     },
     {
@@ -1428,7 +1428,7 @@
       "birthplace": "Columbia",
       "class": "Guard",
       "archetype": "Duelist/Dreadnought",
-      "attack": 895,
+      "atk": 895,
       "id": 159
     },
     {
@@ -1437,7 +1437,7 @@
       "birthplace": "Victoria",
       "class": "Guard",
       "archetype": "Arts Fighter",
-      "attack": 625,
+      "atk": 625,
       "id": 160
     },
     {
@@ -1446,7 +1446,7 @@
       "birthplace": "Undisclosed",
       "class": "Guard",
       "archetype": "AoE/Centurion",
-      "attack": 666,
+      "atk": 666,
       "id": 161
     },
     {
@@ -1455,7 +1455,7 @@
       "birthplace": "Columbia",
       "class": "Guard",
       "archetype": "Ranged/Lord",
-      "attack": 642,
+      "atk": 642,
       "id": 162
     },
     {
@@ -1464,7 +1464,7 @@
       "birthplace": "The Far East",
       "class": "Guard",
       "archetype": "Duelist/Dreadnought",
-      "attack": 893,
+      "atk": 893,
       "id": 163
     },
     {
@@ -1473,7 +1473,7 @@
       "birthplace": "Bolívar",
       "class": "Guard",
       "archetype": "Support/Instructor",
-      "attack": 588,
+      "atk": 588,
       "id": 164
     },
     {
@@ -1482,7 +1482,7 @@
       "birthplace": "Victoria",
       "class": "Guard",
       "archetype": "Duelist/Dreadnought",
-      "attack": 738,
+      "atk": 738,
       "id": 165
     },
     {
@@ -1491,7 +1491,7 @@
       "birthplace": "Columbia",
       "class": "Guard",
       "archetype": "Duelist/Dreadnought",
-      "attack": 353,
+      "atk": 353,
       "id": 166
     },
     {
@@ -1500,7 +1500,7 @@
       "birthplace": "Victoria",
       "class": "Supporter",
       "archetype": "Aura/Bard",
-      "attack": 306,
+      "atk": 306,
       "id": 167
     },
     {
@@ -1509,7 +1509,7 @@
       "birthplace": "Kjerag",
       "class": "Supporter",
       "archetype": "Debuffer/Hexer",
-      "attack": 429,
+      "atk": 429,
       "id": 168
     },
     {
@@ -1518,7 +1518,7 @@
       "birthplace": "Ægir",
       "class": "Supporter",
       "archetype": "Aura/Bard",
-      "attack": 347,
+      "atk": 347,
       "id": 169
     },
     {
@@ -1527,7 +1527,7 @@
       "birthplace": "Higashi",
       "class": "Supporter",
       "archetype": "Slower/Decel Binder",
-      "attack": 491,
+      "atk": 491,
       "id": 170
     },
     {
@@ -1536,7 +1536,7 @@
       "birthplace": "Higashi",
       "class": "Supporter",
       "archetype": "Buffer/Abjurer",
-      "attack": 426,
+      "atk": 426,
       "id": 171
     },
     {
@@ -1545,7 +1545,7 @@
       "birthplace": "Columbia",
       "class": "Supporter",
       "archetype": "Summoner",
-      "attack": 447,
+      "atk": 447,
       "id": 172
     },
     {
@@ -1554,7 +1554,7 @@
       "birthplace": "Columbia",
       "class": "Supporter",
       "archetype": "Summoner",
-      "attack": 427,
+      "atk": 427,
       "id": 173
     },
     {
@@ -1563,7 +1563,7 @@
       "birthplace": "Laterano",
       "class": "Sniper",
       "archetype": "AoE/Artilleryman",
-      "attack": 797,
+      "atk": 797,
       "id": 174
     },
     {
@@ -1572,7 +1572,7 @@
       "birthplace": "Rim Billiton",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 479,
+      "atk": 479,
       "id": 175
     },
     {
@@ -1581,7 +1581,7 @@
       "birthplace": "Columbia",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 172,
+      "atk": 172,
       "id": 176
     },
     {
@@ -1590,7 +1590,7 @@
       "birthplace": "Kazimierz",
       "class": "Sniper",
       "archetype": "Long-Range/Deadeye",
-      "attack": 1123,
+      "atk": 1123,
       "id": 177
     },
     {
@@ -1599,7 +1599,7 @@
       "birthplace": "Lungmen",
       "class": "Sniper",
       "archetype": "Boomstick/Spreadshooter",
-      "attack": 731,
+      "atk": 731,
       "id": 178
     },
     {
@@ -1608,7 +1608,7 @@
       "birthplace": "Victoria",
       "class": "Sniper",
       "archetype": "Heavyweight/Besieger",
-      "attack": 910,
+      "atk": 910,
       "id": 179
     },
     {
@@ -1617,7 +1617,7 @@
       "birthplace": "Unknown",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 500,
+      "atk": 500,
       "id": 180
     },
     {
@@ -1626,7 +1626,7 @@
       "birthplace": "Laterano",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 494,
+      "atk": 494,
       "id": 181
     },
     {
@@ -1635,7 +1635,7 @@
       "birthplace": "Columbia",
       "class": "Sniper",
       "archetype": "Boomstick/Spreadshooter",
-      "attack": 651,
+      "atk": 651,
       "id": 182
     },
     {
@@ -1644,7 +1644,7 @@
       "birthplace": "Columbia",
       "class": "Sniper",
       "archetype": "Aftershock/Flinger",
-      "attack": 653,
+      "atk": 653,
       "id": 183
     },
     {
@@ -1653,7 +1653,7 @@
       "birthplace": "Siracusa",
       "class": "Sniper",
       "archetype": "Boomstick/Spreadshooter",
-      "attack": 663,
+      "atk": 663,
       "id": 184
     },
     {
@@ -1662,7 +1662,7 @@
       "birthplace": "Rim Billiton",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 504,
+      "atk": 504,
       "id": 185
     },
     {
@@ -1671,7 +1671,7 @@
       "birthplace": "Unknown",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 571,
+      "atk": 571,
       "id": 186
     },
     {
@@ -1680,7 +1680,7 @@
       "birthplace": "Columbia",
       "class": "Sniper",
       "archetype": "Close-Range/Heavyshooter",
-      "attack": 710,
+      "atk": 710,
       "id": 187
     },
     {
@@ -1689,7 +1689,7 @@
       "birthplace": "Ægir",
       "class": "Sniper",
       "archetype": "Long-Range/Deadeye",
-      "attack": 1021,
+      "atk": 1021,
       "id": 188
     },
     {
@@ -1698,7 +1698,7 @@
       "birthplace": "Ursus",
       "class": "Sniper",
       "archetype": "Heavyweight/Besieger",
-      "attack": 973,
+      "atk": 973,
       "id": 189
     },
     {
@@ -1707,7 +1707,7 @@
       "birthplace": "Sargon",
       "class": "Sniper",
       "archetype": "AoE/Artilleryman",
-      "attack": 786,
+      "atk": 786,
       "id": 190
     },
     {
@@ -1716,7 +1716,7 @@
       "birthplace": "Undisclosed",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 489,
+      "atk": 489,
       "id": 191
     },
     {
@@ -1725,7 +1725,7 @@
       "birthplace": "Laterano",
       "class": "Sniper",
       "archetype": "Long-Range/Deadeye",
-      "attack": 951,
+      "atk": 951,
       "id": 192
     },
     {
@@ -1734,7 +1734,7 @@
       "birthplace": "Victoria",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 465,
+      "atk": 465,
       "id": 193
     },
     {
@@ -1743,7 +1743,7 @@
       "birthplace": "Unknown",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 472,
+      "atk": 472,
       "id": 194
     },
     {
@@ -1752,7 +1752,7 @@
       "birthplace": "Laterano",
       "class": "Sniper",
       "archetype": "Boomstick/Spreadshooter",
-      "attack": 691,
+      "atk": 691,
       "id": 195
     },
     {
@@ -1761,7 +1761,7 @@
       "birthplace": "Rim Billiton",
       "class": "Sniper",
       "archetype": "Close Range/Heavyshooter",
-      "attack": 775,
+      "atk": 775,
       "id": 196
     },
     {
@@ -1770,7 +1770,7 @@
       "birthplace": "Kazimierz",
       "class": "Sniper",
       "archetype": "AoE/Artilleryman",
-      "attack": 617,
+      "atk": 617,
       "id": 197
     },
     {
@@ -1779,7 +1779,7 @@
       "birthplace": "Laterano",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 505,
+      "atk": 505,
       "id": 198
     },
     {
@@ -1788,7 +1788,7 @@
       "birthplace": "Unknown",
       "class": "Sniper",
       "archetype": "Long-Range/Deadeye",
-      "attack": 1035,
+      "atk": 1035,
       "id": 199
     },
     {
@@ -1797,7 +1797,7 @@
       "birthplace": "Siracusa",
       "class": "Sniper",
       "archetype": "Close Range/Heavyshooter",
-      "attack": 735,
+      "atk": 735,
       "id": 200
     },
     {
@@ -1806,7 +1806,7 @@
       "birthplace": "Kazdel",
       "class": "Sniper",
       "archetype": "AoE/Artilleryman",
-      "attack": 817,
+      "atk": 817,
       "id": 201
     },
     {
@@ -1815,7 +1815,7 @@
       "birthplace": "Kazimierz",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 482,
+      "atk": 482,
       "id": 202
     },
     {
@@ -1824,7 +1824,7 @@
       "birthplace": "Unknown",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 510,
+      "atk": 510,
       "id": 203
     },
     {
@@ -1833,7 +1833,7 @@
       "birthplace": "Higashi",
       "class": "Sniper",
       "archetype": "AoE/Artilleryman",
-      "attack": 771,
+      "atk": 771,
       "id": 204
     },
     {
@@ -1842,7 +1842,7 @@
       "birthplace": "Kazimierz",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 453,
+      "atk": 453,
       "id": 205
     },
     {
@@ -1851,7 +1851,7 @@
       "birthplace": "Victoria",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 463,
+      "atk": 463,
       "id": 206
     },
     {
@@ -1860,7 +1860,7 @@
       "birthplace": "Laterano",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 365,
+      "atk": 365,
       "id": 207
     },
     {
@@ -1869,7 +1869,7 @@
       "birthplace": "Rim Billiton",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 375,
+      "atk": 375,
       "id": 208
     },
     {
@@ -1878,7 +1878,7 @@
       "birthplace": "Undisclosed",
       "class": "Sniper",
       "archetype": "Anti-Air Marksman",
-      "attack": 269,
+      "atk": 269,
       "id": 209
     },
     {
@@ -1887,7 +1887,7 @@
       "birthplace": "Victoria",
       "class": "Defender",
       "archetype": "Fortress",
-      "attack": 882,
+      "atk": 882,
       "id": 210
     },
     {
@@ -1896,7 +1896,7 @@
       "birthplace": "Victoria",
       "class": "Defender",
       "archetype": "Arts Protector",
-      "attack": 621,
+      "atk": 621,
       "id": 211
     },
     {
@@ -1905,7 +1905,7 @@
       "birthplace": "Kjerag",
       "class": "Defender",
       "archetype": "Duelist",
-      "attack": 862,
+      "atk": 862,
       "id": 212
     },
     {
@@ -1914,7 +1914,7 @@
       "birthplace": "Kazimierz",
       "class": "Defender",
       "archetype": "Fortress",
-      "attack": 828,
+      "atk": 828,
       "id": 213
     },
     {
@@ -1923,7 +1923,7 @@
       "birthplace": "Sargon",
       "class": "Defender",
       "archetype": "Normal/Protector",
-      "attack": 364,
+      "atk": 364,
       "id": 214
     },
     {
@@ -1932,7 +1932,7 @@
       "birthplace": "Unknown",
       "class": "Defender",
       "archetype": "Normal/Protector",
-      "attack": 426,
+      "atk": 426,
       "id": 215
     },
     {
@@ -1941,7 +1941,7 @@
       "birthplace": "Kazdel",
       "class": "Defender",
       "archetype": "Enmity/Juggernaut",
-      "attack": 816,
+      "atk": 816,
       "id": 216
     },
     {
@@ -1950,7 +1950,7 @@
       "birthplace": "Kazimierz",
       "class": "Defender",
       "archetype": "Healing/Guardian",
-      "attack": 461,
+      "atk": 461,
       "id": 217
     },
     {
@@ -1959,7 +1959,7 @@
       "birthplace": "Sargon",
       "class": "Defender",
       "archetype": "Normal/Protector",
-      "attack": 362,
+      "atk": 362,
       "id": 218
     },
     {
@@ -1968,7 +1968,7 @@
       "birthplace": "Sargon",
       "class": "Defender",
       "archetype": "Duelist",
-      "attack": 949,
+      "atk": 949,
       "id": 219
     },
     {
@@ -1977,7 +1977,7 @@
       "birthplace": "Rim Billiton",
       "class": "Defender",
       "archetype": "Arts Protector",
-      "attack": 601,
+      "atk": 601,
       "id": 220
     },
     {
@@ -1986,7 +1986,7 @@
       "birthplace": "Yan",
       "class": "Defender",
       "archetype": "Normal/Protector",
-      "attack": 583,
+      "atk": 583,
       "id": 221
     },
     {
@@ -1995,7 +1995,7 @@
       "birthplace": "Lungmen",
       "class": "Defender",
       "archetype": "Healing/Guardian",
-      "attack": 419,
+      "atk": 419,
       "id": 222
     },
     {
@@ -2004,7 +2004,7 @@
       "birthplace": "Lungmen",
       "class": "Defender",
       "archetype": "Normal/Protector",
-      "attack": 361,
+      "atk": 361,
       "id": 223
     },
     {
@@ -2013,7 +2013,7 @@
       "birthplace": "Columbia",
       "class": "Defender",
       "archetype": "Arts Protector",
-      "attack": 566,
+      "atk": 566,
       "id": 224
     },
     {
@@ -2022,7 +2022,7 @@
       "birthplace": "Sargon",
       "class": "Defender",
       "archetype": "Healing/Guardian",
-      "attack": 320,
+      "atk": 320,
       "id": 225
     },
     {
@@ -2031,7 +2031,7 @@
       "birthplace": "Columbia",
       "class": "Defender",
       "archetype": "Healing/Guardian",
-      "attack": 452,
+      "atk": 452,
       "id": 226
     },
     {
@@ -2040,7 +2040,7 @@
       "birthplace": "Higashi",
       "class": "Defender",
       "archetype": "Normal/Protector",
-      "attack": 405,
+      "atk": 405,
       "id": 227
     },
     {
@@ -2049,7 +2049,7 @@
       "birthplace": "Minos",
       "class": "Defender",
       "archetype": "Enmity/Juggernaut",
-      "attack": 774,
+      "atk": 774,
       "id": 228
     },
     {
@@ -2058,7 +2058,7 @@
       "birthplace": "Minos",
       "class": "Defender",
       "archetype": "Normal/Protector",
-      "attack": 366,
+      "atk": 366,
       "id": 229
     },
     {
@@ -2067,7 +2067,7 @@
       "birthplace": "Vouivre",
       "class": "Defender",
       "archetype": "Normal/Protector",
-      "attack": 407,
+      "atk": 407,
       "id": 230
     },
     {
@@ -2076,7 +2076,7 @@
       "birthplace": "Kazimierz",
       "class": "Defender",
       "archetype": "Healing/Guardian",
-      "attack": 438,
+      "atk": 438,
       "id": 231
     },
     {
@@ -2085,7 +2085,7 @@
       "birthplace": "Ursus",
       "class": "Defender",
       "archetype": "Healing/Guardian",
-      "attack": 422,
+      "atk": 422,
       "id": 232
     },
     {
@@ -2094,7 +2094,7 @@
       "birthplace": "Undisclosed",
       "class": "Defender",
       "archetype": "Normal/Protector",
-      "attack": 357,
+      "atk": 357,
       "id": 233
     },
     {
@@ -2103,7 +2103,7 @@
       "birthplace": "Kjerag",
       "class": "Defender",
       "archetype": "Normal/Protector",
-      "attack": 367,
+      "atk": 367,
       "id": 234
     },
     {
@@ -2112,7 +2112,7 @@
       "birthplace": "Bolívar",
       "class": "Defender",
       "archetype": "Normal/Protector",
-      "attack": 295,
+      "atk": 295,
       "id": 235
     },
     {
@@ -2121,7 +2121,7 @@
       "birthplace": "Leithania",
       "class": "Defender",
       "archetype": "Normal/Protector",
-      "attack": 305,
+      "atk": 305,
       "id": 236
     },
     {
@@ -2130,7 +2130,7 @@
       "birthplace": "The Far East",
       "class": "Defender",
       "archetype": "Normal/Protector",
-      "attack": 240,
+      "atk": 240,
       "id": 237
     }
   ]
