@@ -110,6 +110,7 @@ function renderProfile(operator){
     const tr = document.createElement('tr')
     const tr2 = document.createElement('tr')
     const tr3 = document.createElement('tr')
+    const classHolder = document.createElement('td')
 
     for (let key in operatorCopy){
         const td = document.createElement('td')
@@ -118,9 +119,15 @@ function renderProfile(operator){
     }
     const {faction, birthplace, archetype, atk} = operatorCopy
 
-    const classHolder = `class: ${operator.class}`
+    classHolder.textContent = `class: ${operator.class}`
     nameHolder.textContent = operator.name
     table.id = "operatorProfile"
+
+    nameHolder.addEventListener('click', ()=>{
+        if (document.querySelector('#squad button').textContent === "Select-Mode: ON"){
+            selectOperator(operator)
+        }
+    })
 
 
     document.getElementById('mainSection').append(nameHolder, table)
@@ -197,17 +204,3 @@ function findFreeCell(){
         return td.textContent.startsWith('Operator')
     })
 }
-
-/*atkValues: {
-    op1: {
-        atk: 0,
-        hp: 0
-        },
-    op2: {....
-    ID of TD as key*/
-
-    /*
-        array of td elements
-        check if element.textContent contains 'Operator'
-        take the first one that returns true and use it as namecell
-    */
