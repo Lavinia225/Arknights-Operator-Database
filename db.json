@@ -1556,6 +1556,582 @@
       "archetype": "Summoner",
       "attack": 427,
       "id": 173
+    },
+    {
+      "name": "Fiammetta",
+      "faction": "Laterano",
+      "birthplace": "Laterano",
+      "class": "Sniper",
+      "archetype": "AoE/Artilleryman",
+      "attack": 797,
+      "id": 174
+    },
+    {
+      "name": "Kroos the Keen Glint",
+      "faction": "Rhodes Island",
+      "birthplace": "Rim Billiton",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 479,
+      "id": 175
+    },
+    {
+      "name": "Justice Knight",
+      "faction": "Pinus Sylvestris",
+      "birthplace": "Columbia",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 172,
+      "id": 176
+    },
+    {
+      "name": "Fartooth",
+      "faction": "Kazimierz",
+      "birthplace": "Kazimierz",
+      "class": "Sniper",
+      "archetype": "Long-Range/Deadeye",
+      "attack": 1123,
+      "id": 177
+    },
+    {
+      "name": "Ch'en the Holungday",
+      "faction": "Rhodes Island",
+      "birthplace": "Lungmen",
+      "class": "Sniper",
+      "archetype": "Boomstick/Spreadshooter",
+      "attack": 731,
+      "id": 178
+    },
+    {
+      "name": "Toddifons",
+      "faction": "Victoria",
+      "birthplace": "Victoria",
+      "class": "Sniper",
+      "archetype": "Heavyweight/Besieger",
+      "attack": 910,
+      "id": 179
+    },
+    {
+      "name": "Ash",
+      "faction": "Team Rainbow",
+      "birthplace": "Unknown",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 500,
+      "id": 180
+    },
+    {
+      "name": "Archetto",
+      "faction": "Laterano",
+      "birthplace": "Laterano",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 494,
+      "id": 181
+    },
+    {
+      "name": "Pinecone",
+      "faction": "Columbia",
+      "birthplace": "Columbia",
+      "class": "Sniper",
+      "archetype": "Boomstick/Spreadshooter",
+      "attack": 651,
+      "id": 182
+    },
+    {
+      "name": "Rosmontis",
+      "faction": "Rhodes Island",
+      "birthplace": "Columbia",
+      "class": "Sniper",
+      "archetype": "Aftershock/Flinger",
+      "attack": 653,
+      "id": 183
+    },
+    {
+      "name": "Aosta",
+      "faction": "Chiave Gang",
+      "birthplace": "Siracusa",
+      "class": "Sniper",
+      "archetype": "Boomstick/Spreadshooter",
+      "attack": 663,
+      "id": 184
+    },
+    {
+      "name": "April",
+      "faction": "Rim Billiton",
+      "birthplace": "Rim Billiton",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 504,
+      "id": 185
+    },
+    {
+      "name": "Stormeye",
+      "faction": "Unknown",
+      "birthplace": "Unknown",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 571,
+      "id": 186
+    },
+    {
+      "name": "Aciddrop",
+      "faction": "Columbia",
+      "birthplace": "Columbia",
+      "class": "Sniper",
+      "archetype": "Close-Range/Heavyshooter",
+      "attack": 710,
+      "id": 187
+    },
+    {
+      "name": "Andreana",
+      "faction": "Abyssal Hunters",
+      "birthplace": "Ægir",
+      "class": "Sniper",
+      "archetype": "Long-Range/Deadeye",
+      "attack": 1021,
+      "id": 188
+    },
+    {
+      "name": "Rosa (Poca)",
+      "faction": "Ursus Student Union",
+      "birthplace": "Ursus",
+      "class": "Sniper",
+      "archetype": "Heavyweight/Besieger",
+      "attack": 973,
+      "id": 189
+    },
+    {
+      "name": "Sesa",
+      "faction": "Sargon",
+      "birthplace": "Sargon",
+      "class": "Sniper",
+      "archetype": "AoE/Artilleryman",
+      "attack": 786,
+      "id": 190
+    },
+    {
+      "name": "GreyThroat",
+      "faction": "Rhodes Island",
+      "birthplace": "Undisclosed",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 489,
+      "id": 191
+    },
+    {
+      "name": "Ambriel",
+      "faction": "Laterano",
+      "birthplace": "Laterano",
+      "class": "Sniper",
+      "archetype": "Long-Range/Deadeye",
+      "attack": 951,
+      "id": 192
+    },
+    {
+      "name": "May",
+      "faction": "Victoria",
+      "birthplace": "Victoria",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 465,
+      "id": 193
+    },
+    {
+      "name": "Vermeil",
+      "faction": "Siracusa",
+      "birthplace": "Unknown",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 472,
+      "id": 194
+    },
+    {
+      "name": "Executor",
+      "faction": "Laterano",
+      "birthplace": "Laterano",
+      "class": "Sniper",
+      "archetype": "Boomstick/Spreadshooter",
+      "attack": 691,
+      "id": 195
+    },
+    {
+      "name": "Schwarz",
+      "faction": "Siesta",
+      "birthplace": "Rim Billiton",
+      "class": "Sniper",
+      "archetype": "Close Range/Heavyshooter",
+      "attack": 775,
+      "id": 196
+    },
+    {
+      "name": "Catapult",
+      "faction": "Rhodes Island",
+      "birthplace": "Kazimierz",
+      "class": "Sniper",
+      "archetype": "AoE/Artilleryman",
+      "attack": 617,
+      "id": 197
+    },
+    {
+      "name": "Exusiai",
+      "faction": "Penguin Logistics",
+      "birthplace": "Laterano",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 505,
+      "id": 198
+    },
+    {
+      "name": "Firewatch",
+      "faction": "Rhodes Island",
+      "birthplace": "Unknown",
+      "class": "Sniper",
+      "archetype": "Long-Range/Deadeye",
+      "attack": 1035,
+      "id": 199
+    },
+    {
+      "name": "Provence",
+      "faction": "Siracusa",
+      "birthplace": "Siracusa",
+      "class": "Sniper",
+      "archetype": "Close Range/Heavyshooter",
+      "attack": 735,
+      "id": 200
+    },
+    {
+      "name": "Meteorite",
+      "faction": "Rhodes Island",
+      "birthplace": "Kazdel",
+      "class": "Sniper",
+      "archetype": "AoE/Artilleryman",
+      "attack": 817,
+      "id": 201
+    },
+    {
+      "name": "Platinum",
+      "faction": "Kazimierz",
+      "birthplace": "Kazimierz",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 482,
+      "id": 202
+    },
+    {
+      "name": "Blue Poison",
+      "faction": "Iberia",
+      "birthplace": "Unknown",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 510,
+      "id": 203
+    },
+    {
+      "name": "Shirayuki",
+      "faction": "Higashi",
+      "birthplace": "Higashi",
+      "class": "Sniper",
+      "archetype": "AoE/Artilleryman",
+      "attack": 771,
+      "id": 204
+    },
+    {
+      "name": "Meteor",
+      "faction": "Kazimierz",
+      "birthplace": "Kazimierz",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 453,
+      "id": 205
+    },
+    {
+      "name": "Jessica",
+      "faction": "Blacksteel",
+      "birthplace": "Victoria",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 463,
+      "id": 206
+    },
+    {
+      "name": "Adnachiel",
+      "faction": "Rhodes Island",
+      "birthplace": "Laterano",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 365,
+      "id": 207
+    },
+    {
+      "name": "Kroos",
+      "faction": "Rhodes Island",
+      "birthplace": "Rim Billiton",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 375,
+      "id": 208
+    },
+    {
+      "name": "Rangers",
+      "faction": "Rhodes Island",
+      "birthplace": "Undisclosed",
+      "class": "Sniper",
+      "archetype": "Anti-Air Marksman",
+      "attack": 269,
+      "id": 209
+    },
+    {
+      "name": "Horn",
+      "faction": "Victoria",
+      "birthplace": "Victoria",
+      "class": "Defender",
+      "archetype": "Fortress",
+      "attack": 882,
+      "id": 210
+    },
+    {
+      "name": "Shalem",
+      "faction": "Victoria",
+      "birthplace": "Victoria",
+      "class": "Defender",
+      "archetype": "Arts Protector",
+      "attack": 621,
+      "id": 211
+    },
+    {
+      "name": "Aurora",
+      "faction": "Karlan Commercial",
+      "birthplace": "Kjerag",
+      "class": "Defender",
+      "archetype": "Duelist",
+      "attack": 862,
+      "id": 212
+    },
+    {
+      "name": "Ashlock",
+      "faction": "Kazimierz",
+      "birthplace": "Kazimierz",
+      "class": "Defender",
+      "archetype": "Fortress",
+      "attack": 828,
+      "id": 213
+    },
+    {
+      "name": "Heavyrain",
+      "faction": "Rhodes Island",
+      "birthplace": "Sargon",
+      "class": "Defender",
+      "archetype": "Normal/Protector",
+      "attack": 364,
+      "id": 214
+    },
+    {
+      "name": "Blitz",
+      "faction": "Team Rainbow",
+      "birthplace": "Unknown",
+      "class": "Defender",
+      "archetype": "Normal/Protector",
+      "attack": 426,
+      "id": 215
+    },
+    {
+      "name": "Mudrock",
+      "faction": "Rhodes Island",
+      "birthplace": "Kazdel",
+      "class": "Defender",
+      "archetype": "Enmity/Juggernaut",
+      "attack": 816,
+      "id": 216
+    },
+    {
+      "name": "Blemishine",
+      "faction": "Kazimierz",
+      "birthplace": "Kazimierz",
+      "class": "Defender",
+      "archetype": "Healing/Guardian",
+      "attack": 461,
+      "id": 217
+    },
+    {
+      "name": "Bubble",
+      "faction": "Sargon",
+      "birthplace": "Sargon",
+      "class": "Defender",
+      "archetype": "Normal/Protector",
+      "attack": 362,
+      "id": 218
+    },
+    {
+      "name": "Eunectes",
+      "faction": "Sargon",
+      "birthplace": "Sargon",
+      "class": "Defender",
+      "archetype": "Duelist",
+      "attack": 949,
+      "id": 219
+    },
+    {
+      "name": "Asbestos",
+      "faction": "Rim Billiton",
+      "birthplace": "Rim Billiton",
+      "class": "Defender",
+      "archetype": "Arts Protector",
+      "attack": 601,
+      "id": 220
+    },
+    {
+      "name": "Nian",
+      "faction": "Sui",
+      "birthplace": "Yan",
+      "class": "Defender",
+      "archetype": "Normal/Protector",
+      "attack": 583,
+      "id": 221
+    },
+    {
+      "name": "Hung",
+      "faction": "Lee's Detective Agency",
+      "birthplace": "Lungmen",
+      "class": "Defender",
+      "archetype": "Healing/Guardian",
+      "attack": 419,
+      "id": 222
+    },
+    {
+      "name": "Bison",
+      "faction": "Lungmen",
+      "birthplace": "Lungmen",
+      "class": "Defender",
+      "archetype": "Normal/Protector",
+      "attack": 361,
+      "id": 223
+    },
+    {
+      "name": "Dur-nar",
+      "faction": "Rhodes Island",
+      "birthplace": "Columbia",
+      "class": "Defender",
+      "archetype": "Arts Protector",
+      "attack": 566,
+      "id": 224
+    },
+    {
+      "name": "Spot",
+      "faction": "Rhodes Island",
+      "birthplace": "Sargon",
+      "class": "Defender",
+      "archetype": "Healing/Guardian",
+      "attack": 320,
+      "id": 225
+    },
+    {
+      "name": "Saria",
+      "faction": "Rhine Lab",
+      "birthplace": "Columbia",
+      "class": "Defender",
+      "archetype": "Healing/Guardian",
+      "attack": 452,
+      "id": 226
+    },
+    {
+      "name": "Hoshiguma",
+      "faction": "Lungmen Guard Departmen",
+      "birthplace": "Higashi",
+      "class": "Defender",
+      "archetype": "Normal/Protector",
+      "attack": 405,
+      "id": 227
+    },
+    {
+      "name": "Vulcan",
+      "faction": "Minos",
+      "birthplace": "Minos",
+      "class": "Defender",
+      "archetype": "Enmity/Juggernaut",
+      "attack": 774,
+      "id": 228
+    },
+    {
+      "name": "Croissant",
+      "faction": "Penguin Logistics",
+      "birthplace": "Minos",
+      "class": "Defender",
+      "archetype": "Normal/Protector",
+      "attack": 366,
+      "id": 229
+    },
+    {
+      "name": "Liskarm",
+      "faction": "Blacksteel",
+      "birthplace": "Vouivre",
+      "class": "Defender",
+      "archetype": "Normal/Protector",
+      "attack": 407,
+      "id": 230
+    },
+    {
+      "name": "Nearl",
+      "faction": "Followers",
+      "birthplace": "Kazimierz",
+      "class": "Defender",
+      "archetype": "Healing/Guardian",
+      "attack": 438,
+      "id": 231
+    },
+    {
+      "name": "Gummy",
+      "faction": "Ursus Student Union",
+      "birthplace": "Ursus",
+      "class": "Defender",
+      "archetype": "Healing/Guardian",
+      "attack": 422,
+      "id": 232
+    },
+    {
+      "name": "Cuora",
+      "faction": "Columbia",
+      "birthplace": "Undisclosed",
+      "class": "Defender",
+      "archetype": "Normal/Protector",
+      "attack": 357,
+      "id": 233
+    },
+    {
+      "name": "Matterhorn",
+      "faction": "Karlan Commercial",
+      "birthplace": "Kjerag",
+      "class": "Defender",
+      "archetype": "Normal/Protector",
+      "attack": 367,
+      "id": 234
+    },
+    {
+      "name": "Beagle",
+      "faction": "Rhodes Island",
+      "birthplace": "Bolívar",
+      "class": "Defender",
+      "archetype": "Normal/Protector",
+      "attack": 295,
+      "id": 235
+    },
+    {
+      "name": "Cardigan",
+      "faction": "Rhodes Island",
+      "birthplace": "Leithanien",
+      "class": "Defender",
+      "archetype": "Normal/Protector",
+      "attack": 305,
+      "id": 236
+    },
+    {
+      "name": "Noir Corne",
+      "faction": "Rhodes Island",
+      "birthplace": "The Far East",
+      "class": "Defender",
+      "archetype": "Normal/Protector",
+      "attack": 240,
+      "id": 237
     }
   ]
 }
