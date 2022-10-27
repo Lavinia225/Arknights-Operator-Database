@@ -114,6 +114,7 @@ function renderProfile(operator){
     const form = document.createElement('form')
     const showEditForm = document.createElement('button')
     const submitEditButton = document.createElement('input')
+
     for (let key in operatorCopy){
         const td = document.createElement('td')
         td.textContent = `${key}: ${operatorCopy[key]}`
@@ -141,7 +142,7 @@ function renderProfile(operator){
 
     const {faction, birthplace, archetype, atk} = operatorCopy
 
-    classHolder.textContent = `class: ${operator.class}`
+    classHolder.textContent = `Class: ${operator.class}`
     nameHolder.textContent = operator.name
     table.id = "operatorProfile"
     form.hidden = true
@@ -163,6 +164,11 @@ function renderProfile(operator){
         else{
             form.hidden = false
         }
+    })
+
+    form.addEventListener('submit', editedOperator =>{
+        editedOperator.preventDefault()    
+        editOperator.call(editedOperator, operator.id)
     })
 
     form.appendChild(submitEditButton)
@@ -239,4 +245,29 @@ function findFreeCell(){
     return operatorTd.find(td=>{
         return td.textContent.startsWith('Operator')
     })
+}
+
+function editOperator(operatorId){
+    const editedOperator = {
+    "name": this.target.name.value,
+      "faction": this.target.faction.value,
+      "birthplace": this.target.birthplace.value,
+      "class": this.target.class.value,
+      "archetype": this.target.archetype.value,
+      "atk": parseInt(this.target.atk.value)
+    }
+
+    try{
+    fetch(`http:localhost:3000/operators/${operatorId}`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify(editedOperator)
+    }).then(res => res.json()).then(response =>renderProfile(response))
+}
+catch (era){
+    console.error(era)
+}
 }
