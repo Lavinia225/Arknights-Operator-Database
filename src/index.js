@@ -38,7 +38,7 @@ function search(searchType = 'all', searchingFor = 'all'){
 
     fetch(`http:localhost:3000/operators`).then(res => res.json())
     .then(operators =>{
-        const operatorResults = operators.filter(operator =>operator[searchType] === searchingFor)
+        const operatorResults = operators.filter(operator =>operator[searchType].toLowerCase() === searchingFor.toLowerCase())
         if(searchType === 'name'){
             renderProfile(operatorResults[0])
         }
