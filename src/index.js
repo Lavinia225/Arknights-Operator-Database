@@ -14,6 +14,7 @@ let searching = 'name'
 searchBar.addEventListener('submit', e=>{
     e.preventDefault()
     search(searching, e.target.search.value)
+    dropTable.value = searching
 })
 
 prts.addEventListener('click', ()=>{
@@ -61,9 +62,12 @@ function searchFilter(searchType, searchFor){
 }
 
 function renderOperatorList(operators){
+    const infoLabel = document.createElement('p')
     const table = document.createElement('table')
 
+    infoLabel.textContent = "Click an Operator to visit their profile or add them to your squad in select-mode"
     table.id = "operatorTable"
+
 
     for(let i = 0; i < operators.length; i += 3){ //i increments 3 per iteration, since three operators go in a table row.
         const tr = document.createElement('tr')
@@ -92,7 +96,7 @@ function renderOperatorList(operators){
         table.appendChild(tr)
     }
     
-    mainSection.appendChild(table)
+    mainSection.append(infoLabel, table)
 }
 
 function clearMain(){
@@ -143,7 +147,7 @@ function renderProfile(operator){
         const input = document.createElement('input')
 
         label.setAttribute('for', key)
-        label.textContent = key
+        label.textContent = key.charAt().toUpperCase() + key.slice(1)
         input.type = 'text'
         input.name = key
         input.value = operator[key]

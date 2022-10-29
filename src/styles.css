@@ -15,6 +15,7 @@ body {
     left: 0px;
     height: 125px;
     width: 125px;
+    text-align: center;
 }
 
 #submit{
@@ -61,6 +62,16 @@ h2 {
     border-style: none;
 }
 
+#squad-remove-info {
+    text-align: center;
+}
+
+#squad h2{
+    position: relative;
+    margin: auto;
+    max-width: 30%;
+}
+
 #operatorTable{
     margin: auto;
     max-width: 50%
@@ -69,4 +80,8 @@ h2 {
 #editForm{
     margin:auto;
     max-width: 20%
+}
+
+#mainSection > p:first-child{
+    text-align: center;
 }
