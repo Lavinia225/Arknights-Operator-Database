@@ -122,6 +122,7 @@ function renderProfile(operator){
     const tr2 = document.createElement('tr')
     const tr3 = document.createElement('tr')
     const classHolder = document.createElement('td')
+    const editButtonHolder = document.createElement('td')
     const form = document.createElement('form')
     const showEditForm = document.createElement('button')
     const submitEditButton = document.createElement('input')
@@ -162,6 +163,7 @@ function renderProfile(operator){
     showEditForm.textContent = 'Click to Edit'
     submitEditButton.value = 'Submit'
     submitEditButton.type = 'submit'
+    editButtonHolder.appendChild(showEditForm)
 
     nameHolder.addEventListener('click', ()=>{
         if (document.querySelector('#squad button').textContent === "Select-Mode: ON"){
@@ -188,7 +190,7 @@ function renderProfile(operator){
     table.append(tr, tr2, tr3)
     tr.append(faction, birthplace)
     tr2.append(classHolder, archetype)
-    tr3.append(atk, showEditForm)
+    tr3.append(atk, editButtonHolder)
     mainSection.appendChild(form)
 }
 
