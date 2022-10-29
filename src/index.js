@@ -38,7 +38,7 @@ function search(searchType = 'all', searchingFor = 'all'){
 
     fetch(`http:localhost:3000/operators`).then(res => res.json())
     .then(operators =>{
-        const operatorResults = operators.filter(operator =>operator[searchType].toLowerCase() === searchingFor.toLowerCase())
+        const operatorResults = operators.filter(operator => searchFilter.call(operator, searchType, searchingFor))
         if(searchType === 'name'){
             renderProfile(operatorResults[0])
         }
@@ -47,6 +47,17 @@ function search(searchType = 'all', searchingFor = 'all'){
         }
     })
     searchBar.reset()
+}
+
+function searchFilter(searchType, searchFor){
+    if (searchType === 'archetype'){
+        const splity = this.archetype.toLowerCase().split(/['/ ']/g)
+        console.log(splity)
+        return searchFor.toLowerCase().startsWith(splity[0]) || searchFor.toLowerCase().startsWith(splity[1])
+    }
+    else{
+        return this[searchType].toLowerCase() === searchFor.toLowerCase()
+    }
 }
 
 function renderOperatorList(operators){
@@ -117,7 +128,8 @@ function renderProfile(operator){
 
     for (let key in operatorCopy){
         const td = document.createElement('td')
-        td.textContent = `${key}: ${operatorCopy[key]}`
+        const keyUpperCased = key.charAt(0).toUpperCase() + key.slice(1)
+        td.textContent = `${keyUpperCased}: ${operatorCopy[key]}`
         operatorCopy[key] = td
     }
 
