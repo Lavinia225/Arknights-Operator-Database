@@ -77,6 +77,10 @@ h2 {
     max-width: 50%
 }
 
+#operatorTable td:hover{
+    color: #0000EE;
+}
+
 #editForm{
     margin:auto;
     max-width: 20%
