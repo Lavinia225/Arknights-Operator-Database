@@ -3,7 +3,6 @@ const prts = document.getElementById('PRTS')
 const factionTable = document.getElementById('factionTable') //This is kept here so when not displayed, it can be brought back.
 const dropTable = document.querySelector('select')
 const mainSection = document.getElementById('mainSection')
-const squad = document.getElementById('squad')
 const dpsButton = document.getElementById('dps-button')
 const atkValues = {
 
@@ -34,6 +33,7 @@ document.querySelector('#squad button').addEventListener('click', e=>selectMode(
 factionRedirectAdder()
 deselectEventAdder()
 
+//Primary Functions
 function search(searchType = 'all', searchingFor = 'all'){
     clearMain()
 
@@ -50,10 +50,54 @@ function search(searchType = 'all', searchingFor = 'all'){
     searchBar.reset()
 }
 
+function factionRedirectAdder(){
+    const factions = Array.from(document.querySelectorAll('#factionTable img'))
+
+    factions.forEach(faction =>{
+        faction.addEventListener('click', ()=>{
+            const factionNameStartPoint = faction.src.indexOf('images/') + 7
+            const factionName = faction.src.slice(factionNameStartPoint, faction.src.length - 5).replaceAll("%20", " ")
+            
+            search('faction', factionName)
+        })
+    })
+}
+
+function selectMode(e){
+    buttonText = e.target.textContent
+
+    if (buttonText === "Select-Mode: ON"){
+        e.target.textContent = "Select-Mode: OFF"
+    }  
+    else if (buttonText === "Select-Mode: OFF"){
+        e.target.textContent = "Select-Mode: ON"
+    }
+}
+
+function calculateDPS(){
+    const offensiveValues = Object.values(atkValues).map(item => item.atk)
+    const healValues = Object.values(atkValues).map(item => item.heal)
+    
+    document.getElementById('dps-label').textContent = "Current DPS: " + offensiveValues.reduce(counter, 0)
+    document.getElementById('hps-label').textContent = "Current HPS: " + healValues.reduce(counter, 0)
+
+    function counter(previousValue, currentValue){
+        return previousValue += currentValue
+    }
+}
+
+function deselectEventAdder(){
+    const operatorTd = Array.from(document.querySelectorAll('#squad tr td'))
+
+    operatorTd.splice(12, 1)
+
+    operatorTd.map(operator => operator.addEventListener('click', deselectOperator))
+
+}
+// -----------------------------------------------------------------------------------
 function searchFilter(searchType, searchFor){
     if (searchType === 'archetype'){
         const splity = this.archetype.toLowerCase().split(/['/ ']/g)
-        console.log(splity)
         return searchFor.toLowerCase().startsWith(splity[0]) || searchFor.toLowerCase().startsWith(splity[1])
     }
     else{
@@ -101,19 +145,6 @@ function renderOperatorList(operators){
 
 function clearMain(){
     Array.from(mainSection.children).forEach(child => child.remove())
-}
-
-function factionRedirectAdder(){
-    const factions = Array.from(document.querySelectorAll('#factionTable img'))
-
-    factions.forEach(faction =>{
-        faction.addEventListener('click', ()=>{
-            const factionNameStartPoint = faction.src.indexOf('images/') + 7
-            const factionName = faction.src.slice(factionNameStartPoint, faction.src.length - 5).replaceAll("%20", " ")
-            
-            search('faction', factionName)
-        })
-    })
 }
 
 function renderProfile(operator){
@@ -197,18 +228,7 @@ function renderProfile(operator){
     tr3.append(atk, editButtonHolder)
     mainSection.appendChild(form)
 }
-
-function selectMode(e){
-    buttonText = e.target.textContent
-
-    if (buttonText === "Select-Mode: ON"){
-        e.target.textContent = "Select-Mode: OFF"
-    }  
-    else if (buttonText === "Select-Mode: OFF"){
-        e.target.textContent = "Select-Mode: ON"
-    }
-}
-
+//Callback functions
 function selectOperator(operator){
     const nameCell = findFreeCell()
     nameCell.textContent = operator.name
@@ -225,27 +245,6 @@ function selectOperator(operator){
             heal: 0
         }
     }
-}
-
-function calculateDPS(){
-    const offensiveValues = Object.values(atkValues).map(item => item.atk)
-    const healValues = Object.values(atkValues).map(item => item.heal)
-    
-    document.getElementById('dps-label').textContent = "Current DPS: " + offensiveValues.reduce(counter, 0)
-    document.getElementById('hps-label').textContent = "Current HPS: " + healValues.reduce(counter, 0)
-
-    function counter(previousValue, currentValue){
-        return previousValue += currentValue
-    }
-}
-
-function deselectEventAdder(){
-    const operatorTd = Array.from(document.querySelectorAll('#squad tr td'))
-
-    operatorTd.splice(12, 1)
-
-    operatorTd.map(operator => operator.addEventListener('click', deselectOperator))
-
 }
 
 function deselectOperator(e){
@@ -286,6 +285,6 @@ function editOperator(operatorId){
     }).then(res => res.json()).then(response =>renderProfile(response))
 }
 catch (era){
-    console.error(era)
+    alert(era)
 }
 }
