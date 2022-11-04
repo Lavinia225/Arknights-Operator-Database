@@ -6,22 +6,22 @@ Arknights Operator Database is both a operator search system and a Damage Per Se
 
 Clicking PRTS returns you to the start.
 
-# Searching Operators
+#### Searching Operators
 
 Click a faction to receive a list of all operators within the faction. 
 Or use the searchbar to find operators by various catagories. When searching by name, you are taken directly to the operator's profile.
 Another way to go to their profile is to click their name in the search lists. 
 
-# Damage Per Second / Healing Per Second Calculator
+#### Damage Per Second / Healing Per Second Calculator
 
 After toggling on select-mode, clicking an operator's name in their profile or in any search list will add them to your squad. You can then
 click 'Calculate DPS/HPS' to receive the total damage and healing values of your team. Clicking an operator within your squad removes them.
 
-# Editing Operators
+#### Editing Operators
 
 Click 'edit' within an operator profile to edit them. The form will prefill the current data, and after a successful edit, re-renders the profile.
 
-# Usage Gif
+#### Usage Gif
 ![tutorial gif](./tutorial.gif)
 
 ## Contributing
