@@ -167,21 +167,18 @@ function renderProfile(operator){
     }
 
     for (let key in operator){
-        if (key === 'id'){
-
-        }
-        else{
-        const label = document.createElement('label')
-        const input = document.createElement('input')
-
-        label.setAttribute('for', key)
-        label.textContent = key.charAt().toUpperCase() + key.slice(1)
-        input.type = 'text'
-        input.name = key
-        input.value = operator[key]
-
-        form.appendChild(label)
-        form.appendChild(input)
+        if (key != 'id'){
+            const label = document.createElement('label')
+            const input = document.createElement('input')
+    
+            label.setAttribute('for', key)
+            label.textContent = key.charAt().toUpperCase() + key.slice(1)
+            input.type = 'text'
+            input.name = key
+            input.value = operator[key]
+    
+            form.appendChild(label)
+            form.appendChild(input)
         }
     }
 
@@ -245,13 +242,11 @@ function selectOperator(operator){
 }
 
 function deselectOperator(e){
-    if (e.target.textContent.startsWith('Operator')){
-
+    if (e.target.textContent.startsWith('Operator') === false){
+        e.target.textContent = `Operator ${e.target.id.substring(2)}`
+        delete atkValues[e.target.id]
     }
-    else{
-    e.target.textContent = `Operator ${e.target.id.substring(2)}`
-    delete atkValues[e.target.id]
-}}
+}
 
 function findFreeCell(){
     const operatorTd = Array.from(document.querySelectorAll('#squad tr td'))
