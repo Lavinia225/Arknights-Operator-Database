@@ -11,6 +11,11 @@ In addition, the DPS/HPS tool is included to help with sorting out damage/healin
 
 Clicking PRTS returns you to the start.
 
+#### Activating the Database
+
+The database is intended to be used with [json-server](https://www.npmjs.com/package/json-server). Once json-server is installed, run `json-server --watch db.json`
+before using the program.
+
 #### Searching Operators
 
 Click a faction to receive a list of all operators within the faction. 
