@@ -4,10 +4,7 @@ const factionTable = document.getElementById('factionTable') //This is kept here
 const dropTable = document.querySelector('select')
 const mainSection = document.getElementById('mainSection')
 const dpsButton = document.getElementById('dps-button')
-const atkValues = {
-
-}
-
+const atkValues = {}
 let searching = 'name'
 
 searchBar.addEventListener('submit', e=>{
@@ -33,7 +30,7 @@ document.querySelector('#squad button').addEventListener('click', e=>selectMode(
 factionRedirectAdder()
 deselectEventAdder()
 
-//Primary Functions
+
 function search(searchType = 'all', searchingFor = 'all'){
     clearMain()
 
@@ -94,11 +91,11 @@ function deselectEventAdder(){
     operatorTd.map(operator => operator.addEventListener('click', deselectOperator))
 
 }
-// -----------------------------------------------------------------------------------
+
 function searchFilter(searchType, searchFor){
     if (searchType === 'archetype'){
-        const splity = this.archetype.toLowerCase().split(/['/ ']/g)
-        return searchFor.toLowerCase().startsWith(splity[0]) || searchFor.toLowerCase().startsWith(splity[1])
+        const archetypearray = this.archetype.toLowerCase().split(/['/ ']/g)
+        return searchFor.toLowerCase().startsWith(archetypearray[0]) || searchFor.toLowerCase().startsWith(archetypearray[1])
     }
     else{
         return this[searchType].toLowerCase() === searchFor.toLowerCase()
@@ -228,7 +225,7 @@ function renderProfile(operator){
     tr3.append(atk, editButtonHolder)
     mainSection.appendChild(form)
 }
-//Callback functions
+
 function selectOperator(operator){
     const nameCell = findFreeCell()
     nameCell.textContent = operator.name
