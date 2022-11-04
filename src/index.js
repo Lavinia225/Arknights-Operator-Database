@@ -23,7 +23,7 @@ dropTable.addEventListener('change', e=>{
     searchBar.search.placeholder = `Searching by ${searching}`
 })
 
-dpsButton.addEventListener('click', ()=> calculateDPS())
+dpsButton.addEventListener('click', calculateDPS)
 
 document.querySelector('#squad button').addEventListener('click', e=>selectMode(e))
 
@@ -34,7 +34,8 @@ deselectEventAdder()
 function search(searchType = 'all', searchingFor = 'all'){
     clearMain()
 
-    fetch(`http:localhost:3000/operators`).then(res => res.json())
+    fetch(`http:localhost:3000/operators`)
+    .then(res => res.json())
     .then(operators =>{
         const operatorResults = operators.filter(operator => searchFilter.call(operator, searchType, searchingFor))
         if(searchType === 'name'){
@@ -108,7 +109,6 @@ function renderOperatorList(operators){
 
     infoLabel.textContent = "Click an Operator to visit their profile or add them to your squad in select-mode"
     table.id = "operatorTable"
-
 
     for(let i = 0; i < operators.length; i += 3){ //i increments 3 per iteration, since three operators go in a table row.
         const tr = document.createElement('tr')
