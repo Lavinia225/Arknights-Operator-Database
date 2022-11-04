@@ -1,6 +1,11 @@
 # Arknights Operator Database
 
-Arknights Operator Database is both a operator search system and a Damage Per Second(DPS)/Healing Per Second(HPS) calculator.
+Arknights Operator Database is both a operator search system and a Damage Per Second(DPS)/Healing Per Second(HPS) calculator. 
+
+You can use it to find a list of operators that meet search requirements by faction, class, archetype, or birthplace. Searching an operator by name takes
+you directly to their profile. 
+
+In addition, the DPS/HPS tool is included to help with sorting out damage/healing for bossing or sorting out if you have enough damage/healing to clear a stage.
 
 ## Usage
 
