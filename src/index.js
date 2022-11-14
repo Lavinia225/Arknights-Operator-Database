@@ -1,6 +1,6 @@
 const searchBar = document.querySelector('form')
 const prts = document.getElementById('PRTS')
-const factionTable = document.getElementById('factionTable') //This is kept here so when not displayed, it can be brought back.
+const factionTable = document.getElementById('factionTable')
 const dropTable = document.querySelector('select')
 const mainSection = document.getElementById('mainSection')
 const dpsButton = document.getElementById('dps-button')
@@ -110,7 +110,7 @@ function renderOperatorList(operators){
     infoLabel.textContent = "Click an Operator to visit their profile or add them to your squad in select-mode"
     table.id = "operatorTable"
 
-    for(let i = 0; i < operators.length; i += 3){ //i increments 3 per iteration, since three operators go in a table row.
+    for(let i = 0; i < operators.length; i += 3){ 
         const tr = document.createElement('tr')
 
         try{
