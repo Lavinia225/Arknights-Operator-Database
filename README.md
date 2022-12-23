@@ -40,7 +40,7 @@ Pull requests are welcome. Please be sure to email or open an issue related to t
 
 ## Project Status
 
-In-Progress.
+Complete.
 
 ## Contact
 
